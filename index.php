@@ -3,6 +3,11 @@
 <head> 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
 
+<meta property="og:title" content="UniRent" />
+<meta property="og:description" content="The student's renting marketplace" />
+<meta property="og:url" content="http://unirent.online" />
+<meta property="og:image" content="images/logo.png" />
+
 <title>UniRent</title> 
 
 <link rel="stylesheet" href="style.css" type="text/css" media="screen">
@@ -24,7 +29,7 @@
 
     <div id="book">   
     
-      <div id="ribbon" class="contact">clique para revelar o formulário de contactos</div>    
+      <div id="ribbon" class="contact">clique para revelar o formulário de contacto</div>    
       <div class="top-page"></div>
       
       <div class="content-page">
