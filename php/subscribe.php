@@ -11,35 +11,38 @@ if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
 
 $email    = $_POST['email'];
 if(trim($email) == '') {
-	echo '<div class="error_message">Atenção! Por favor insira um endereço de e-mail válido.</div>';
+	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">Atenção! Você digitou um endereço de e-mail inválido. Por favor, tente novamente.</div>';
+	echo '<div class="error_message">Attention! You have entered an invalid e-mail address. Please try again.</div>';
 	exit();
 }
 
 // Configuration option.
 // Enter the email address that you want to emails to be sent to.
+// Example $address = "contacto@unirent.online";
 
-//$address = "contact@unirent.online";
-$address = "contact@unirent.online";
+//$address = "contacto@unirent.online";
+$address = "contacto@unirent.online";
 
 
 // Configuration option.
 // i.e. The standard subject will appear as, "You've been contacted by John Doe."
 
-$e_subject = 'Novo assinante de email ' . $email . '.';
+// Example, $e_subject = '$name . ' has contacted you via Your Website.';
+
+$e_subject = 'New email subscriber ' . $email . '.';
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "Novo assinante de email: $email";
+$e_body = "New email subscriber: $email";
 
 $msg = wordwrap( $e_body );
 
-$headers = "De: $email" . PHP_EOL;
+$headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
@@ -51,13 +54,13 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h1>E-mail enviado com sucesso.</h1>";
-	echo "<p>Obrigado! Entraremos em contato assim que lançarmos o site!</p>";
+	echo "<h1>Email Sent Successfully.</h1>";
+	echo "<p>Thank you! We will contact you once we`ll launch the website!</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
 } else {
 
-	echo 'ERRO!';
+	echo 'ERROR!';
 
 }

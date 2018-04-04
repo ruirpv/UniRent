@@ -17,33 +17,33 @@ $comments = $_POST['comments'];
 $verify   = $_POST['verify'];
 
 if(trim($name) == '') {
-	echo '<div class="error_message">Atenção! Você deve digitar seu nome.</div>';
+	echo '<div class="error_message">Attention! You must enter your name.</div>';
 	exit();
 } else if(trim($email) == '') {
-	echo '<div class="error_message">Atenção! Por favor insira um endereço de e-mail válido.</div>';
+	echo '<div class="error_message">Attention! Please enter a valid email address.</div>';
 	exit();
 } else if(trim($phone) == '') {
-	echo '<div class="error_message">Atenção! Por favor insira um número de telefone válido.</div>';
+	echo '<div class="error_message">Attention! Please enter a valid phone number.</div>';
 	exit();
 } else if(!is_numeric($phone)) {
-	echo '<div class="error_message">Atenção! O número de telefone pode conter apenas dígitos.</div>';
+	echo '<div class="error_message">Attention! Phone number can only contain digits.</div>';
 	exit();
 } else if(!isEmail($email)) {
-	echo '<div class="error_message">Atenção! Você digitou um endereço de e-mail inválido. Por favor, tente novamente.</div>';
+	echo '<div class="error_message">Attention! You have entered an invalid e-mail address. Please try again.</div>';
 	exit();
 }
 
 if(trim($subject) == '') {
-	echo '<div class="error_message">Atenção! Por favor, insira um assunto.</div>';
+	echo '<div class="error_message">Attention! Please enter a subject.</div>';
 	exit();
 } else if(trim($comments) == '') {
-	echo '<div class="error_message">Atenção! Por favor insira a sua mensagem.</div>';
+	echo '<div class="error_message">Attention! Please enter your message.</div>';
 	exit();
 } else if(!isset($verify) || trim($verify) == '') {
-	echo '<div class="error_message">Atenção! Por favor, insira o número de verificação.</div>';
+	echo '<div class="error_message">Attention! Please enter the verification number.</div>';
 	exit();
 } else if(trim($verify) != '4') {
-	echo '<div class="error_message">Atenção! O número de verificação que você digitou está incorreto.</div>';
+	echo '<div class="error_message">Attention! The verification number you entered is incorrect.</div>';
 	exit();
 }
 
@@ -54,28 +54,31 @@ if(get_magic_quotes_gpc()) {
 
 // Configuration option.
 // Enter the email address that you want to emails to be sent to.
+// Example $address = "contacto@unirent.online";
 
-//$address = "contact@unirent.online";
-$address = "contact@unirent.online";
+//$address = "contacto@unirent.online";
+$address = "contacto@unirent.online";
 
 
 // Configuration option.
 // i.e. The standard subject will appear as, "You've been contacted by John Doe."
 
-$e_subject = 'Você foi contatado por ' . $name . '.';
+// Example, $e_subject = '$name . ' has contacted you via Your Website.';
+
+$e_subject = 'You have been contacted by ' . $name . '.';
 
 
 // Configuration option.
 // You can change this if you feel that you need to.
 // Developers, you may wish to add more fields to the form, in which case you must be sure to add them here.
 
-$e_body = "Você foi contatado por $name em relação a $subject, a mensagem adicional é a seguinte." . PHP_EOL . PHP_EOL;
+$e_body = "You have been contacted by $name with regards to $subject, their additional message is as follows." . PHP_EOL . PHP_EOL;
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
-$e_reply = "Você pode entrar em contato com $name via email, $email ou via telefone $phone";
+$e_reply = "You can contact $name via email, $email or via phone $phone";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
-$headers = "De: $email" . PHP_EOL;
+$headers = "From: $email" . PHP_EOL;
 $headers .= "Reply-To: $email" . PHP_EOL;
 $headers .= "MIME-Version: 1.0" . PHP_EOL;
 $headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
@@ -87,13 +90,13 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	echo "<fieldset>";
 	echo "<div id='success_page'>";
-	echo "<h1>E-mail enviado com sucesso.</h1>";
-	echo "<p>Obrigado <strong>$name</strong>, sua mensagem foi enviada para nós.</p>";
+	echo "<h1>Email Sent Successfully.</h1>";
+	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
 	echo "</div>";
 	echo "</fieldset>";
 
 } else {
 
-	echo 'ERRO!';
+	echo 'ERROR!';
 
 }

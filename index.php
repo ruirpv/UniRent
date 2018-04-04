@@ -20,16 +20,16 @@
 <script type="text/javascript" src="js/custom.js"></script>
 
 </head> 
- 
+
 <body> 
   <div id="wrapper">
     <header>
       <a class="logo" href="index.php"><img src="images/logo_2.png" alt="logo" title="logo" height="250" width="600"/></a>
     </header>
-
+    
     <div id="book">   
     
-      <div id="ribbon" class="contact">clique para revelar o formulário de contacto</div>    
+      <div id="ribbon" class="contact">click me to reveal the contact form</div>    
       <div class="top-page"></div>
       
       <div class="content-page">
@@ -38,31 +38,31 @@
         
         <div id="cform">
           <div class="row"></div>
-          <h3>Entre em contacto conosco:</h3>
+          <h3>Get in touch with us:</h3>
           <div class="form-wrapper in-touch">
             <div id="message"></div>
             <form method="post" action="php/contact.php" name="contactform" id="contactform">
-              <input type="text" name="name" placeholder="Nome" id="name" />
+              <input type="text" name="name" placeholder="Name" id="name" />
               <input type="text" name="email" placeholder="Email" id="email" />
-              <input type="text" name="phone" placeholder="Telemóvel" id="phone" />
-              <input type="text" name="subject" placeholder="Assunto" id="subject" />
-              <textarea placeholder="Mensagem" name="comments" id="comments"></textarea>
+              <input type="text" name="phone" placeholder="Phone" id="phone" />
+              <input type="text" name="subject" placeholder="Subject" id="subject" />
+              <textarea placeholder="Message" name="comments" id="comments"></textarea>
               <div id="captcha">
                 <span>3+1=</span>
                 <input type="text" name="verify" id="verify" />
               </div>
              
-              <input type="submit" name="send" value="ENVIAR" id="submit" class="orange" /> 
+              <input type="submit" name="send" value="SEND" id="submit" class="orange" /> 
             </form>
           </div>
         </div>
       
         <div id="home">
           <div class="row"></div>
-          <h2>Estamos atualmente em construção!</h2>          
+          <h2>We're currently under construction!</h2>          
           <div class="row"></div>
           <div class="row"></div>
-          <h3>Estamos trabalhando muito e acreditamos que lançaremos o site em:</h3>
+          <h3>We're working hard and believe we'll launch the website in:</h3>
           
           <div id="countdown"></div>  
           <div class="clear"></div>
@@ -70,9 +70,9 @@
           <div class="form-wrapper email-list">
             <div id="mesaj"></div>
             <form id="subscribe" method="post" action="php/subscribe.php" name="subscribe">
-              <input type="text" id="semail" name="YourEmail" placeholder="Subscreva a nossa lista de email" />
-             
-              <input type="submit" id="ssubmit" name="subscribe" value="SE INSCREVER" class="orange" />
+              <input type="text" id="semail" name="YourEmail" placeholder="Subscribe to our email list" />
+               
+              <input type="submit" id="ssubmit" name="subscribe" value="SUBSCRIBE" class="orange" />
             </form>
           </div>
         </div>
@@ -91,9 +91,8 @@
     </div>
     
     <p class="copyright">Copyright &copy; UniRent - All Rights Reserved</p>
-
+    
   </div>
 <script type="text/javascript" src="js/jquery.placeholder.js"></script>
 </body> 
 </html>
-
