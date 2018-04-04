@@ -21,10 +21,10 @@
     <header>
       <a class="logo" href="index.php"><img src="images/logo_2.png" alt="logo" title="logo" height="250" width="600"/></a>
     </header>
-    
+
     <div id="book">   
     
-      <div id="ribbon" class="contact">clique para revelar o formulário de contacto</div>    
+      <div id="ribbon" class="contact">clique para revelar o formulário de contactos</div>    
       <div class="top-page"></div>
       
       <div class="content-page">
