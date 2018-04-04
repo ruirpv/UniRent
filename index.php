@@ -6,7 +6,7 @@
 <meta property="og:title" content="UniRent" />
 <meta property="og:description" content="The student's renting marketplace" />
 <meta property="og:url" content="http://unirent.online" />
-<meta property="og:image" content="images/logo.png" />
+<meta property="og:image" content="images/logo_3.png" />
 
 <title>UniRent</title> 
 
