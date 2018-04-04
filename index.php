@@ -32,7 +32,7 @@
         <img src="images/logo_2.png" alt="LOGO" height="180" width="400">
       </div>
 
-      <p class="txt-center m1-txt1 p-t-13 p-b-18">
+      <p class="txt-center m1-txt1 p-b-38">
         Our website is under construction
       </p>
 
