@@ -62,12 +62,11 @@
             </li>
 
           </ul>
-
-          <form class="form-inline">
-            <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
-            <button class="btn btn-dark" type="Submit">OK</button>
-          </form>
         
+        </div>
+
+        <div class="navbar-nav">
+                <a class="nav-link" href="#">Login</a>
         </div>
 
       </div>
