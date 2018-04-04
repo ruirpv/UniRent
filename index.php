@@ -19,7 +19,7 @@
 <body> 
   <div id="wrapper">
     <header>
-      <a class="logo" href="index.php"><img src="images/logo.png" alt="logo" title="logo" height="200" width="200"/></a>
+      <a class="logo" href="index.php"><img src="images/logo_2.png" alt="logo" title="logo" height="250" width="600"/></a>
     </header>
     
     <div id="book">   
@@ -86,7 +86,7 @@
     </div>
     
     <p class="copyright">Copyright &copy; UniRent - All Rights Reserved</p>
-    
+
   </div>
 <script type="text/javascript" src="js/jquery.placeholder.js"></script>
 </body> 
