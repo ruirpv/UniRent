@@ -19,7 +19,7 @@
 <body> 
   <div id="wrapper">
     <header>
-      <a class="logo" href="index.php"><img src="images/logo.png" alt="logo" title="logo" /></a>
+      <a class="logo" href="index.php"><img src="images/logo.png" alt="logo" title="logo" height="200" width="200"/></a>
     </header>
     
     <div id="book">   
