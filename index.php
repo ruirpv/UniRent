@@ -26,6 +26,8 @@
     <header>
       <a class="logo" href="index.php"><img src="images/logo_2.png" alt="logo" title="logo" height="250" width="600"/></a>
     </header>
+
+    <center><img src="images/us_underconstruction.png" alt="logo" title="logo" height="350" width="600"/></center>
     
     <div id="book">   
     
