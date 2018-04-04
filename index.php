@@ -1,100 +1,119 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UniRent</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta property="og:title" content="UniRent" />
-<meta property="og:description" content="The student's renting marketplace" />
-<meta property="og:url" content="http://unirent.online" />
-<meta property="og:image" content="images/logo_3.png" />
-
-<title>UniRent</title> 
-
-<link rel="stylesheet" href="style.css" type="text/css" media="screen">
-
-<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
-<script type="text/javascript" src="js/jquery.countdown.js"></script>
-<script type="text/javascript" src="js/jquery.tipsy.js"></script>
-<script type="text/javascript" src="js/jquery.subscribe.js"></script>
-<script type="text/javascript" src="js/jquery.contact.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-
-</head> 
-
-<body> 
-  <div id="wrapper">
-    <header>
-      <a class="logo" href="index.php"><img src="images/logo_2.png" alt="logo" title="logo" height="250" width="600"/></a>
-    </header>
-
-    <center><img src="images/us_underconstruction.png" alt="logo" title="logo" height="350" width="600"/></center>
-    
-    <div id="book">   
-    
-      <div id="ribbon" class="contact">click me to reveal the contact form</div>    
-      <div class="top-page"></div>
-      
-      <div class="content-page">
-        <div class="top-spiral"></div>
-        <div class="bottom-spiral"></div>
-        
-        <div id="cform">
-          <div class="row"></div>
-          <h3>Get in touch with us:</h3>
-          <div class="form-wrapper in-touch">
-            <div id="message"></div>
-            <form method="post" action="php/contact.php" name="contactform" id="contactform">
-              <input type="text" name="name" placeholder="Name" id="name" />
-              <input type="text" name="email" placeholder="Email" id="email" />
-              <input type="text" name="phone" placeholder="Phone" id="phone" />
-              <input type="text" name="subject" placeholder="Subject" id="subject" />
-              <textarea placeholder="Message" name="comments" id="comments"></textarea>
-              <div id="captcha">
-                <span>3+1=</span>
-                <input type="text" name="verify" id="verify" />
-              </div>
-             
-              <input type="submit" name="send" value="SEND" id="submit" class="orange" /> 
-            </form>
-          </div>
-        </div>
-      
-        <div id="home">
-          <div class="row"></div>
-          <h2>We're currently under construction!</h2>          
-          <div class="row"></div>
-          <div class="row"></div>
-          <h3>We're working hard and believe we'll launch the website in:</h3>
-          
-          <div id="countdown"></div>  
-          <div class="clear"></div>
-          <div class="row"></div>
-          <div class="form-wrapper email-list">
-            <div id="mesaj"></div>
-            <form id="subscribe" method="post" action="php/subscribe.php" name="subscribe">
-              <input type="text" id="semail" name="YourEmail" placeholder="Subscribe to our email list" />
-               
-              <input type="submit" id="ssubmit" name="subscribe" value="SUBSCRIBE" class="orange" />
-            </form>
-          </div>
-        </div>
-        
+  <meta property="og:title" content="UniRent" />
+  <meta property="og:description" content="The student's renting marketplace" />
+  <meta property="og:url" content="http://unirent.online" />
+  <meta property="og:image" content="images/logo_whatsapp.png" />
+<!--===============================================================================================-->  
+  <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="css/util.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+  
+  <div class="bg-img1 size1 flex-w flex-c-m p-t-55 p-b-55 p-l-15 p-r-15" style="background-image: url('images/soft_wallpaper.png');">
+    <div class="wsize1 bor1 bg1 p-t-40 p-b-45 p-l-15 p-r-15 respon1">
+      <div class="wrappic1">
+        <img src="images/logo_2.png" alt="LOGO" height="180" width="400">
       </div>
-      
-      <div class="bottom-page">
-        <ul class="social">
 
-          <li><a class="facebook tooltip" href="#" title="Facebook"></a></li>
-          <li><a class="twitter tooltip" href="#" title="Twitter"></a></li>
-          <li><a class="skype tooltip" href="#" title="Skype"></a></li>
-          
-        </ul>
+      <p class="txt-center m1-txt1 p-t-13 p-b-18">
+        Our website is under construction
+      </p>
+
+      <div class="wsize2 flex-w flex-c hsize1 cd100">
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 days">35</span>
+          <span class="s1-txt1">Days</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 hours">17</span>
+          <span class="s1-txt1">Hours</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 minutes">50</span>
+          <span class="s1-txt1">Minutes</span>
+        </div>
+
+        <div class="flex-col-c-m size2 how-countdown">
+          <span class="l1-txt1 p-b-9 seconds">39</span>
+          <span class="s1-txt1">Seconds</span>
+        </div>
       </div>
+
+      <form class="flex-w flex-c-m contact100-form validate-form">
+        <div class="wrap-input100 validate-input where1" data-validate = "Email is required: ex@abc.xyz">
+          <input class="s1-txt2 placeholder0 input100" type="text" name=" email" placeholder="Your Email">
+          <span class="focus-input100"></span>
+        </div>
+
+        
+        <button class="flex-c-m s1-txt3 size3 how-btn trans-04 where1">
+          Get Notified
+        </button>
+        
+      </form>
+
+      <p class="s1-txt4 txt-center p-t-10">
+        I promise to <span class="bor2">never</span> spam
+      </p>
+      
     </div>
-    
-    <p class="copyright">Copyright &copy; UniRent - All Rights Reserved</p>
-    
   </div>
-<script type="text/javascript" src="js/jquery.placeholder.js"></script>
-</body> 
+
+<!--===============================================================================================-->  
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+  <script src="vendor/countdowntime/moment.min.js"></script>
+  <script src="vendor/countdowntime/moment-timezone.min.js"></script>
+  <script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
+  <script src="vendor/countdowntime/countdowntime.js"></script>
+  <script>
+    $('.cd100').countdown100({
+      /*Set Endtime here*/
+      /*Endtime must be > current time*/
+      endtimeYear: 2018,
+      endtimeMonth: 5,
+      endtimeDate: 15,
+      endtimeHours: 9,
+      endtimeMinutes: 0,
+      endtimeSeconds: 0,
+      timeZone: "Europe/Lisbon" 
+      // ex:  timeZone: "America/New_York"
+      //go to " http://momentjs.com/timezone/ " to get timezone
+    });
+  </script>
+<!--===============================================================================================-->
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script >
+    $('.js-tilt').tilt({
+      scale: 1.1
+    })
+  </script>
+<!--===============================================================================================-->
+  <script src="js/main.js"></script>
+
+</body>
 </html>
