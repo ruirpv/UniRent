@@ -32,9 +32,11 @@
         <img src="images/logo_2.png" alt="LOGO" height="180" width="400">
       </div>
 
-      <p class="txt-center m1-txt1 p-b-38">
+      <div class="wrappic1">
         <img src="images/us_underconstruction.png" alt="logo" title="logo" height="350" width="600"/>
-      </p>
+      </div>
+
+      <br>
 
       <p class="txt-center m1-txt1 p-b-38">
         Our website is under construction!
