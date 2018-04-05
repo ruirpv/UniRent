@@ -33,7 +33,11 @@
       </div>
 
       <p class="txt-center m1-txt1 p-b-38">
-        Our website is under construction
+        <img src="images/us_underconstruction.png" alt="logo" title="logo" height="350" width="600"/>
+      </p>
+
+      <p class="txt-center m1-txt1 p-b-38">
+        Our website is under construction!
       </p>
 
       <div class="wsize2 flex-w flex-c hsize1 cd100">
