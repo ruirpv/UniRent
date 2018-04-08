@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>UniRent</title>
+  <title>Coming Soon - UniRent</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="UniRent" />
+  <meta property="og:title" content="Coming Soon - UniRent" />
   <meta property="og:description" content="The student's renting marketplace" />
   <meta property="og:url" content="http://unirent.online" />
   <meta property="og:image" content="images/logo_whatsapp.png" />
