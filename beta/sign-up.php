@@ -48,7 +48,7 @@
 						<p>Please fill out the fields below to create your account. We will send your account information to the email address you enter. Your email address and information will NOT be sold or shared with any 3rd party. If you already have an account, please, <a href="login.html">click here</a>.</p>
 					</div>
 					<div class="signUpForm">
-						<form action="register_new_user.php" method="POST">
+						<form action="db/register_new_user.php" method="POST">
 							<div class="formSection">
 								<h3>Contact Information</h3>
 								<div class="row">
