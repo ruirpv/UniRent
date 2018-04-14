@@ -48,21 +48,21 @@
 						<p>Please fill out the fields below to create your account. We will send your account information to the email address you enter. Your email address and information will NOT be sold or shared with any 3rd party. If you already have an account, please, <a href="login.html">click here</a>.</p>
 					</div>
 					<div class="signUpForm">
-						<form action="#">
+						<form action="register_new_user.php" method="POST">
 							<div class="formSection">
 								<h3>Contact Information</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="firstName" class="control-label">First Name*</label>
-										<input type="text" class="form-control" id="firstName">
+										<input type="text" class="form-control" id="firstName" name="firstName">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="lastName" class="control-label">Last Name*</label>
-										<input type="text" class="form-control" id="lastName">
+										<input type="text" class="form-control" id="lastName" name="lastName">
 									</div>
 									<div class="form-group col-xs-12">
 										<label for="emailAdress" class="control-label">Email Address*</label>
-										<input type="email" class="form-control" id="emailAdress">
+										<input type="email" class="form-control" id="emailAdress" name="emailAdress">
 									</div>
 								</div>
 							</div>
@@ -71,15 +71,15 @@
 								<div class="row">
 									<div class="form-group col-xs-12">
 										<label for="usernames" class="control-label">Username*</label>
-										<input type="text" class="form-control" id="usernames">
+										<input type="text" class="form-control" id="username" name="username">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="passwordFirst" class="control-label">Password*</label>
-										<input type="password" class="form-control" id="password">
+										<input type="password" class="form-control" id="password" name="password">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="passwordAgain" class="control-label">Password (re-type)*</label>
-										<input type="password" class="form-control" id="passwordAgain">
+										<input type="password" class="form-control" id="passwordAgain" name="passwordAgain">
 									</div>
 								</div>
 							</div>
@@ -94,7 +94,7 @@
 										</div>
 									</div>
 									<div class="form-group col-xs-12 mb0">
-										<button type="submit" class="btn btn-primary">Create Account</button>
+										<button type="submit" name="submit" class="btn btn-primary">Create Account</button>
 									</div>
 								</div>
 							</div>

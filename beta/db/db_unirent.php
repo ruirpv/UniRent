@@ -1,5 +1,7 @@
 <?php
-	db_connect();
+	// PHP file to connect with UniRent DB
+	
+	db_connect(); //apenas para teste rápido
 	// connect UniRent DB
 	function db_connect() {
 
