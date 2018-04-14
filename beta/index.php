@@ -1,107 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
 
-  <!-- SITE TITTLE -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="UniRent" />
-  <meta property="og:description" content="The student's renting marketplace" />
-  <meta property="og:url" content="http://unirent.online" />
-  <meta property="og:image" content="img/logo_whatsapp.png" />
-  <title>UniRent</title>
-
-  <!-- PLUGINS CSS STYLE -->
-  <link href="plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet">
-  <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="plugins/listtyicons/style.css" rel="stylesheet">
-  <link href="plugins/bootstrapthumbnail/bootstrap-thumbnail.css" rel="stylesheet">
-  <link href="plugins/datepicker/datepicker.min.css" rel="stylesheet">
-  <link href="plugins/selectbox/select_option1.css" rel="stylesheet">
-  <link href="plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-  <link href="plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet"/>
-  <link href="plugins/isotope/isotope.min.css" rel="stylesheet">
-  <link href="plugins/map/css/map.css" rel="stylesheet">
-  <link href="plugins/rateyo/jquery.rateyo.min.css" rel="stylesheet">
-  <link href="plugins/animate/animate.css" rel="stylesheet">
-
-  <!-- GOOGLE FONT -->
-  <link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,600,700,800,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff" rel="stylesheet">
-
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="css/default.css" id="option_color">
-
-  <!-- FAVICON -->
-  <link href="img/favicon.png" rel="shortcut icon">
-
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-</head>
-
-<body id="body" class="body-wrapper boxed-menu" >
-  <!-- <div class="page-loader" style="background: url(img/preloader.gif) center no-repeat #fff;"></div> -->
-  <!-- Preloader -->
-  <div id="preloader" class="smooth-loader-wrapper">
-    <div class="smooth-loader">
-      <div class="loader1">
-      <div class="loader-target">
-        <div class="loader-target-main"></div>
-        <div class="loader-target-inner"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="main-wrapper">
-    <!-- HEADER -->
-    <header id="pageTop" class="header">
-
-      <!-- TOP INFO BAR -->
-
-      <div class="nav-wrapper">
-        <!-- NAVBAR -->
-        <nav id="menuBar" class="navbar navbar-default transparent-navbar " role="navigation">
-          <div class="container">
-
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              
-              <a class="navbar-brand" href="index.html">
-                <img src="img/unirent.png" alt="LOGO">
-              </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                </li>
-                <li class=" dropdown singleDrop">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                  <ul class="dropdown-menu dropdown-menu-left">
-                      <li><a href="contact-us.html">Contact Us</a></li>
-                      <li><a href="terms-of-services.html">Terms and Conditions</a></li>
-                      <li><a href="how-it-works.html">How It Works</a></li>
-                  </ul>
-                </li>
-                <li class=""><a href="login.html">login </a></li>
-              </ul>
-            </div>
-            <a class="btn btn-default navbar-btn" href="sign-up.html"> + <span>Sign Up</span></a>
-          </div>
-        </nav>
-      </div>
-    </header>
+<?php
+  require_once('php/header_index.php');
+  // print UniRent header
+  do_unirent_header('UniRent');
+?>
 
 
 <!-- BANNER SECTION -->
@@ -140,7 +43,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/works-2.png" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.html"><h3>Need</h3></a>
+            <a href="how-it-works.php"><h3>Need</h3></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
           </div>
         </div>
@@ -149,7 +52,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/works-1.png" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.html"><h3>Search</h3></a>
+            <a href="how-it-works.php"><h3>Search</h3></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
           </div>
         </div>
@@ -158,7 +61,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/works-3.png" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.html"><h3>Rent</h3></a>
+            <a href="how-it-works.php"><h3>Rent</h3></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
           </div>
         </div>
@@ -167,7 +70,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/works-1.png" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.html"><h3>Return</h3></a>
+            <a href="how-it-works.php"><h3>Return</h3></a>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
           </div>
         </div>
@@ -329,7 +232,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="btnArea text-center">
-					<a href="sign-up.html" class="btn btn-primary">Get started</a>
+					<a href="sign-up.php" class="btn btn-primary">Get started</a>
 				</div>
 			</div>
 		</div>
@@ -459,141 +362,22 @@
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-12">
 				<div class="btnArea">
-					<a href="sign-up.html" class="btn btn-primary btn-block">Get Started</a>
+					<a href="sign-up.php" class="btn btn-primary btn-block">Get Started</a>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
+
 <!-- MAP SECTION -->
 <section class="clearfix p0">
   <div id="map-canvas"></div>
 </section>
 
-    <!-- FOOTER -->
-    <footer style="background-image: url(img/background/2.jpg);">
-      <!-- FOOTER INFO -->
-      <div class="clearfix footerInfo">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-7 col-xs-12">
-              <div class="footerText">
-                <p>The student's renting marketplace</p>
-                <ul class="list-styled list-contact">
-                  <li><i class="fa fa-phone" aria-hidden="true"></i>[+351] 657 524 332</li>
-                  <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:contacto@unirent.online?Subject=Contact%20UniRent" target="_top">contacto@unirent.online</a></li>
-                  <li><i class="fa fa-globe" aria-hidden="true"></i><a href="#">Change language to <u>Portuguese</u></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-sm-3 col-xs-12">
-            </div>
-            <div class="col-sm-2 col-xs-12">
-              <div class="footerInfoTitle">
-                <h4>Company</h4>
-              </div>
-              <div class="useLink">
-                <ul class="list-unstyled">
-                  <li><a href="contact-us.html">Contact Us</a></li>
-                  <li><a href="terms-of-services.html">Terms and Conditions</a></li>
-                  <li><a href="how-it-works.html">How It Works</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- COPY RIGHT -->
-      <div class="clearfix copyRight">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="copyRightWrapper">
-                <div class="row">
-                  <div class="col-sm-5 col-sm-push-7 col-xs-12">
-                    <ul class="list-inline socialLink">
-                      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    </ul>
-                  </div>
-                  <div class="col-sm-7 col-sm-pull-5 col-xs-12">
-                    <div class="copyRightText">
-                      <p>Copyright &copy; 2017. All Rights Reserved by <a href="index.html">UniRent</a></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <!-- LOGIN  MODAL -->
-  <div id="loginModal" tabindex="-1" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Log In to your Account</h4>
-        </div>
-        <div class="modal-body">
-          <form class="loginForm">
-            <div class="form-group">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <input type="email" class="form-control" id="email" placeholder="Email">
-            </div>
-            <div class="form-group">
-              <i class="fa fa-lock" aria-hidden="true"></i>
-              <input type="password" class="form-control" id="pwd" placeholder="Password">
-            </div>
-            <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block">Log In</button>
-            </div>
-            <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-              <a href="#" class="pull-right link">Fogot Password?</a>
-            </div>
-
-          </form>
-        </div>
-        <div class="modal-footer">
-          <p>Don't have an Account? <a href="sign-up.html" class="link">Sign up</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- JAVASCRIPTS -->
-  <script src="plugins/jquery/jquery.min.js"></script>
-  <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-  <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-  <script src="plugins/smoothscroll/SmoothScroll.min.js"></script>
-  <script src="plugins/waypoints/waypoints.min.js"></script>
-  <script src="plugins/counter-up/jquery.counterup.min.js"></script>
-  <script src="plugins/datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="plugins/selectbox/jquery.selectbox-0.1.3.min.js"></script>
-  <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-  <script src="plugins/slick/slick.min.js"></script>
-  <script src="plugins/isotope/isotope.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/isotope/isotope-triger.min.js"></script>
-  <script src="plugins/rateyo/jquery.rateyo.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEDfNcQRmKQEyulDN8nGWjLYPm8s4YB58"></script>
-  <script src="plugins/map/js/rich-marker.js"></script>
-  <script src="plugins/map/js/infobox_packed.js"></script>
-  <script src="js/single-map.js"></script>
-  <script src="js/map.js"></script>
-  <script src="js/custom.js"></script>
-
-</body>
-
-</html>
-
+<?php
+  require_once('php/footer.php');
+  // print UniRent header
+  do_unirent_footer();
+?>
