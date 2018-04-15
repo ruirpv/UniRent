@@ -45,7 +45,7 @@
 				<div class="signUpFormArea">
 					<div class="priceTableTitle">
 						<h2>Account Registration</h2>
-						<p>Please fill out the fields below to create your account. We will send your account information to the email address you enter. Your email address and information will NOT be sold or shared with any 3rd party. If you already have an account, please, <a href="login.html">click here</a>.</p>
+						<p>Please fill out the fields below to create your account. We will send your account information to the email address you enter. Your email address and information will NOT be sold or shared with any 3rd party. If you already have an account, please, <a href="login.php">click here</a>.</p>
 					</div>
 					<div class="signUpForm">
 						<form action="db/register_new_user.php" method="POST">
@@ -89,7 +89,7 @@
 										<div class="checkbox">
 											<label>
 												<input type="checkbox">
-												I agree to the <a href="terms-of-services.html">Terms of Use</a> & <a href="#">Privacy Policy</a>. Your business listing is fully backed by our 100% money back guarantee.
+												I agree to the <a href="terms-of-services.php">Terms of Use</a>. Your business listing is fully backed by our 100% money back guarantee.
 											</label>
 										</div>
 									</div>
