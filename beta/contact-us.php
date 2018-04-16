@@ -8,7 +8,7 @@
 
 
 <!-- PAGE TITLE SECTION -->
-<section class="clearfix pageTitleSection bg-image" style="background-image: url(img/background/bg-page-title.jpg);">
+<section class="clearfix pageTitleSection bg-image" style="background-image: url(img/banner/6.png);">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">

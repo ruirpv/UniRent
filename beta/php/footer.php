@@ -4,7 +4,7 @@
 ?>
 
 	<!-- FOOTER -->
-    <footer style="background-image: url(img/background/2.jpg);">
+    <footer style="background-image: url(img/banner/4.png);">
       <!-- FOOTER INFO -->
       <div class="clearfix footerInfo">
         <div class="container">
