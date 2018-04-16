@@ -36,42 +36,45 @@
 <section class="clearfix worksArea">
   <div class="container">
     <div class="page-header text-center">
-      <h2>How it Works? <small>Solution in 4 <b>easy</b> steps balancing risk and opportunity</small></h2>
+      <h1>How it Works?</h1> 
+        <h4>UniRent is an innovative service for students like you who need an item just for a short period of time. It's safe and practical, and lets you browse thousands of items available to rent and match your needs.<br><br>
+        <small>We give you a simple solution divided in 4 <b>easy</b> steps</small>
+      </h4>
     </div>
     <div class="row">
       <div class="col-sm-3 col-xs-10">
         <div class="thumbnail text-center worksContent">
-          <img src="img/works/works-2.png" alt="Image works">
+          <img src="img/works/Need.png" alt="Image works">
           <div class="caption">
             <a href="how-it-works.php"><h3>Need</h3></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+            <p>You had a need of an item, and the best way is to rent instead of buying.</p>
           </div>
         </div>
       </div>
       <div class="col-sm-3 col-xs-10">
         <div class="thumbnail text-center worksContent">
-          <img src="img/works/works-1.png" alt="Image works">
+          <img src="img/works/Search.png" alt="Image works">
           <div class="caption">
             <a href="how-it-works.php"><h3>Search</h3></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+            <p>You search for this item that you would like to rent in our platform.</p>
           </div>
         </div>
       </div>
       <div class="col-sm-3 col-xs-10">
         <div class="thumbnail text-center worksContent">
-          <img src="img/works/works-3.png" alt="Image works">
+          <img src="img/works/Rent.png" alt="Image works">
           <div class="caption">
             <a href="how-it-works.php"><h3>Rent</h3></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+            <p>Rent any item you need straight from its Owner in a easy way.</p>
           </div>
         </div>
       </div>
       <div class="col-sm-3 col-xs-10">
         <div class="thumbnail text-center worksContent">
-          <img src="img/works/works-1.png" alt="Image works">
+          <img src="img/works/Return.png" alt="Image works">
           <div class="caption">
             <a href="how-it-works.php"><h3>Return</h3></a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua.</p>
+            <p>After used you return the item to its owner at a convenient time for both.</p>
           </div>
         </div>
       </div>

@@ -29,13 +29,13 @@
 				<div class="howWorksInner">
 					<div class="row">
 						<div class="col-sm-4 col-sm-push-8 col-xs-12">
-							<div class="howWorksImage text-right"><img src="img/works/works-big-2.png" alt="Image Works"></div>
+							<div class="howWorksImage text-right"><img src="img/works/Need.png" width="250" height="250" alt="Image Works"></div>
 						</div>
 						<div class="col-sm-8 col-sm-pull-4 col-xs-12">
 							<div class="howWorksInfo text-left">
 								<p>Step 1</p>
 								<h3>Need</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+								<p>You had a need of an item, and the best way is to rent instead of buying.</p>
 							</div>
 						</div>
 					</div>
@@ -43,13 +43,13 @@
 				<div class="howWorksInner">
 					<div class="row">
 						<div class="col-sm-4 col-xs-12">
-							<div class="howWorksImage text-left"><img src="img/works/works-big-1.png" alt="Image Works"></div>
+							<div class="howWorksImage text-left"><img src="img/works/Search.png" width="250" height="250" alt="Image Works"></div>
 						</div>
 						<div class="col-sm-8 col-xs-12">
 							<div class="howWorksInfo text-right">
 								<p>Step 2</p>
 								<h3>Search</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+								<p>Search for any item you would like to rent in our platform. You can also request an item when necessary.</p>
 							</div>
 						</div>
 					</div>
@@ -57,13 +57,13 @@
 				<div class="howWorksInner">
 					<div class="row">
 						<div class="col-sm-4 col-sm-push-8 col-xs-12">
-							<div class="howWorksImage text-right"><img src="img/works/works-big-3.png" alt="Image Works"></div>
+							<div class="howWorksImage text-right"><img src="img/works/Rent.png" width="250" height="250" alt="Image Works"></div>
 						</div>
 						<div class="col-sm-8 col-sm-pull-4 col-xs-12">
 							<div class="howWorksInfo text-left">
 								<p>Step 3</p>
 								<h3>Rent</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+								<p>Rent any item you need straight from its Owner in a easy way.</p>
 							</div>
 						</div>
 					</div>
@@ -71,13 +71,13 @@
         <div class="howWorksInner">
           <div class="row">
             <div class="col-sm-4 col-xs-12">
-              <div class="howWorksImage text-left"><img src="img/works/works-big-1.png" alt="Image Works"></div>
+              <div class="howWorksImage text-left"><img src="img/works/Return.png" width="250" height="250" alt="Image Works"></div>
             </div>
             <div class="col-sm-8 col-xs-12">
               <div class="howWorksInfo text-right">
                 <p>Step 4</p>
                 <h3>Return</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem </p>
+                <p>Return the item to its owner at a convenient time.</p>
               </div>
             </div>
           </div>
