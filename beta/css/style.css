@@ -5807,7 +5807,7 @@ figure:hover .overlay {
 .loaded #preloader {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.7s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .listy-logo-svg {
