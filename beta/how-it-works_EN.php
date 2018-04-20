@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header.php');
+  require_once('php/header_EN.php');
   // print UniRent header
   do_unirent_header('How it works - UniRent');
 ?>
@@ -89,7 +89,7 @@
 
 
 <?php
-  require_once('php/footer.php');
+  require_once('php/footer_EN.php');
   // print UniRent header
   do_unirent_footer();
 ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header_index.php');
+  require_once('php/header_index_EN.php');
   // print UniRent header
   do_unirent_header('UniRent');
 ?>
@@ -46,7 +46,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Need.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Need</h3></a>
+            <a href="how-it-works_EN.php"><h3>Need</h3></a>
             <p>You had a need of an item, and the best way is to rent instead of buying.</p>
           </div>
         </div>
@@ -55,7 +55,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Search.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Search</h3></a>
+            <a href="how-it-works_EN.php"><h3>Search</h3></a>
             <p>You search for this item that you would like to rent in our platform.</p>
           </div>
         </div>
@@ -64,7 +64,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Rent.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Rent</h3></a>
+            <a href="how-it-works_EN.php"><h3>Rent</h3></a>
             <p>Rent any item you need straight from its Owner in a easy way.</p>
           </div>
         </div>
@@ -73,7 +73,7 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Return.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Return</h3></a>
+            <a href="how-it-works_EN.php"><h3>Return</h3></a>
             <p>After used you return the item to its owner at a convenient time for both.</p>
           </div>
         </div>
@@ -235,7 +235,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="btnArea text-center">
-					<a href="sign-up.php" class="btn btn-primary">Get started</a>
+					<a href="sign-up_EN.php" class="btn btn-primary">Get started</a>
 				</div>
 			</div>
 		</div>
@@ -365,7 +365,7 @@
 			</div>
 			<div class="col-md-2 col-sm-3 col-xs-12">
 				<div class="btnArea">
-					<a href="sign-up.php" class="btn btn-primary btn-block">Get Started</a>
+					<a href="sign-up_EN.php" class="btn btn-primary btn-block">Get Started</a>
 				</div>
 			</div>
 		</div>
@@ -380,7 +380,7 @@
 
 
 <?php
-  require_once('php/footer.php');
+  require_once('php/footer_EN.php');
   // print UniRent header
   do_unirent_footer();
 ?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header.php');
+  require_once('php/header_EN.php');
   // print UniRent header
   do_unirent_header('Login - UniRent');
 ?>
@@ -33,7 +33,7 @@
 						</form>
 					</div>
 					<div class="panel-footer text-center">
-						<p>Not a member yet? <a href="sign-up.php" class="link">Sign up</a></p>
+						<p>Not a member yet? <a href="sign-up_EN.php" class="link">Sign up</a></p>
 					</div>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 
 
 <?php
-  require_once('php/footer.php');
+  require_once('php/footer_EN.php');
   // print UniRent header
   do_unirent_footer();
 ?>

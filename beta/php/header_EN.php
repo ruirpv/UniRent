@@ -31,7 +31,7 @@
   <link href="plugins/rateyo/jquery.rateyo.min.css" rel="stylesheet">
   <link href="plugins/animate/animate.css" rel="stylesheet">
 
-    <!-- PLUGINS CSS STYLE : CONTACT-US.PHP -->
+    <!-- PLUGINS CSS STYLE : CONTACT-US_EN.php -->
   <link href="plugins/slick/slick.css" rel="stylesheet">
   <link href="plugins/slick/slick-theme.css" rel="stylesheet">
 
@@ -79,7 +79,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.php">
+              <a class="navbar-brand" href="index_EN.php">
                 <img src="img/unirent.png" alt="LOGO">
               </a>
             </div>
@@ -91,15 +91,15 @@
                 <li class=" dropdown singleDrop">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
-                      <li><a href="contact-us.php">Contact Us</a></li>
-                      <li><a href="terms-of-services.php">Terms and Conditions</a></li>
-                      <li><a href="how-it-works.php">How It Works</a></li>
+                      <li><a href="contact-us_EN.php">Contact Us</a></li>
+                      <li><a href="terms-of-services_EN.php">Terms and Conditions</a></li>
+                      <li><a href="how-it-works_EN.php">How It Works</a></li>
                   </ul>
                 </li>
-                <li class=""><a href="login.php">login </a></li>
+                <li class=""><a href="login_EN.php">login </a></li>
               </ul>
             </div>
-            <a class="btn btn-default navbar-btn" href="sign-up.php"> + <span>Sign Up</span></a>
+            <a class="btn btn-default navbar-btn" href="sign-up_EN.php"> + <span>Sign Up</span></a>
           </div>
         </nav>
       </div>

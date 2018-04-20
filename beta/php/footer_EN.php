@@ -27,9 +27,9 @@
               </div>
               <div class="useLink">
                 <ul class="list-unstyled">
-                  <li><a href="contact-us.php">Contact Us</a></li>
-                  <li><a href="terms-of-services.php">Terms and Conditions</a></li>
-                  <li><a href="how-it-works.php">How It Works</a></li>
+                  <li><a href="contact-us_EN.php">Contact Us</a></li>
+                  <li><a href="terms-of-services_EN.php">Terms and Conditions</a></li>
+                  <li><a href="how-it-works_EN.php">How It Works</a></li>
                 </ul>
               </div>
             </div>
@@ -53,7 +53,7 @@
                   </div>
                   <div class="col-sm-7 col-sm-pull-5 col-xs-12">
                     <div class="copyRightText">
-                      <p>Copyright &copy; 2017. All Rights Reserved by <a href="index.php">UniRent</a></p>
+                      <p>Copyright &copy; 2017. All Rights Reserved by <a href="index_EN.php">UniRent</a></p>
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@
           </form>
         </div>
         <div class="modal-footer">
-          <p>Don't have an Account? <a href="sign-up.php" class="link">Sign up</a></p>
+          <p>Don't have an Account? <a href="sign-up_EN.php" class="link">Sign up</a></p>
         </div>
       </div>
     </div>

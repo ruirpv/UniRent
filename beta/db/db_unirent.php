@@ -12,18 +12,18 @@
 		//$port = 3306;
 
 		// Create connection
-		//Connect to UniRent Hostiger DB
+		// Connect to UniRent Hostiger DB
 		$conn = mysqli_connect($servername, $username, $password, $database);
 
 		//Connect to UniRent XAMPP Local DB
-		//$con = mysqli_connect('localhost', 'root', '', 'UniRent');
+		//$conn = mysqli_connect('localhost', 'root', '', 'u215407366_unir');
 
 		// Check connection
 		if (!$conn) {
 			die("Connection failed: " . mysqli_connect_error());
 		}
 
-		echo "Connected successfully";
+		//echo "Connected successfully";
 		mysqli_close($conn);
 	}
 ?>
