@@ -3,11 +3,24 @@
 <?php
   require_once('php/header_EN.php');
   require_once('db/unirent_functions.php');
+  
   // print UniRent header
   do_unirent_header('Sign-Up - UniRent');
+  
   // connect to UniRent DB
   $conn = db_connect();
 ?>
+
+<style type="text/css">
+ .scrollable{
+   overflow: auto;
+   width: 270px; /* adjust this width depending to amount of text to display */
+   height: 120px; /* adjust height depending on number of options to display */
+ }
+ .scrollable select{
+   border: none;
+ }
+</style>
 
 
 <!-- PAGE TITLE SECTION -->
@@ -96,26 +109,20 @@
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="selectSome" class="control-label">Country</label>
 										<div class="contactSelect">
-											<select name="country" id="country" class="select-drop">
+											<select name="country" id="country" class="select-drop" >
 
-											<?php
+												<?php
 
-												$result = mysqli_query($conn, "select countryEN from Country");
-												$countryEN_num_rows = mysqli_num_rows($result);
+													$result_Country = $conn->query("select id, countryEN from Country");
 
-												if ($countryEN_num_rows > 0) {
-    												// output data of each row
-    												for ($i=0; $i <= $countryEN_num_rows; $i++) { 
-														$countryEN_consulta = mysqli_fetch_array($result);
-														echo "<option value=" . $i .">" . $countryEN_consulta[$i] . "</option>";
+													while ($row = $result_Country->fetch_assoc()) {
+                  										unset($id, $name);
+									                	$id = $row['id'];
+									                	$name = $row['countryEN']; 
+									                	echo '<option value="'.$id.'">'.$name.'</option>';
 													}
-												} else {
-    												echo "<option value='0'>No Countries available</option>";
-												}
-												
-												$conn->close();
 
-											?>
+												?>
 
 											</select>
 										</div>
@@ -124,9 +131,20 @@
 										<label for="selectSome" class="control-label">City</label>
 										<div class="contactSelect">
 											<select name="city" id="city" class="select-drop">
-												<option value="0">X</option>
-												<option value="1">Y</option>
-												<option value="2">Z</option>           
+												
+												<?php
+
+													$result_City = $conn->query("select id, name from City");
+
+													while ($row = $result_City->fetch_assoc()) {
+	                  									unset($id, $name);
+										                $id = $row['id'];
+										                $name = $row['name']; 
+										                echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
 											</select>
 										</div>
 									</div>
@@ -197,6 +215,9 @@
 </section>
 
 <?php
+  // disconnect to UniRent DB
+  $conn->close();
+
   require_once('php/footer_EN.php');
   // print UniRent header
   do_unirent_footer();

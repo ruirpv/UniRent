@@ -2,8 +2,13 @@
 
 <?php
   require_once('php/header.php');
+  require_once('db/unirent_functions.php');
+  
   // print UniRent header
   do_unirent_header('Sign-Up - UniRent');
+  
+  // connect to UniRent DB
+  $conn = db_connect();
 ?>
 
 
@@ -60,9 +65,13 @@
 										<label for="lastName" class="control-label">Last Name*</label>
 										<input type="text" class="form-control" id="lastName" name="lastName">
 									</div>
-									<div class="form-group col-xs-12">
-										<label for="emailAdress" class="control-label">Email Address*</label>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="firstName" class="control-label">Email Address*</label>
 										<input type="email" class="form-control" id="emailAdress" name="emailAdress">
+									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="lastName" class="control-label">Phone Number*</label>
+										<input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
 									</div>
 								</div>
 							</div>
@@ -80,6 +89,80 @@
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="passwordAgain" class="control-label">Password (re-type)*</label>
 										<input type="password" class="form-control" id="passwordAgain" name="passwordAgain">
+									</div>
+								</div>
+							</div>
+							<div class="formSection">
+								<h3>Address Information</h3>
+								<div class="row">
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="selectSome" class="control-label">Country</label>
+										<div class="contactSelect">
+											<select name="country" id="country" class="select-drop">
+
+												<?php
+
+													$result_Country = $conn->query("select id, countryPT from Country");
+
+													while ($row = $result_Country->fetch_assoc()) {
+                  										unset($id, $name);
+									                	$id = $row['id'];
+									                	$name = $row['countryPT']; 
+									                	echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="selectSome" class="control-label">City</label>
+										<div class="contactSelect">
+											<select name="city" id="city" class="select-drop">
+												
+												<?php
+
+													$result_City = $conn->query("select id, name from City");
+
+													while ($row = $result_City->fetch_assoc()) {
+	                  									unset($id, $name);
+										                $id = $row['id'];
+										                $name = $row['name']; 
+										                echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="formSection">
+								<h3>More Information</h3>
+								<div class="row">
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="usernames" class="control-label">Nationality*</label>
+										<input type="text" class="form-control" id="nationality" name="nationality">
+									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="selectSome" class="control-label">Gender</label>
+										<div class="contactSelect">
+											<select name="gender" id="gender" class="select-drop">
+												<option value="0">Male</option>
+												<option value="1">Female</option>
+												<option value="2">No specified</option>           
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-xs-12">
+										<label for="usernames" class="control-label">Student Number</label>
+										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
+									</div>
+									<div class="form-group col-xs-12">
+										<label for="usernames" class="control-label">Student Degree</label>
+										<input type="text" class="form-control" id="studentDegree" name="studentDegree">
 									</div>
 								</div>
 							</div>
@@ -121,6 +204,9 @@
 </section>
 
 <?php
+  // disconnect to UniRent DB
+  $conn->close();
+
   require_once('php/footer.php');
   // print UniRent header
   do_unirent_footer();

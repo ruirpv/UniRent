@@ -1,7 +1,7 @@
 <?php
 	// PHP file to connect with UniRent DB
 	
-	db_connect(); //apenas para teste rápido
+	//db_connect(); //apenas para teste rápido
 	// connect UniRent DB
 	function db_connect() {
 
@@ -13,10 +13,11 @@
 
 		// Create connection
 		// Connect to UniRent Hostiger DB
-		$conn = mysqli_connect($servername, $username, $password, $database);
+		$conn = new mysqli($servername, $username, $password, $database);
 
 		//Connect to UniRent XAMPP Local DB
-		//$conn = mysqli_connect('localhost', 'root', '', 'u215407366_unir');
+		//$conn = new mysqli('localhost', 'root', '', 'u215407366_unir');
+		mysqli_set_charset( $conn, 'utf8');
 
 		// Check connection
 		if (!$conn) {
@@ -24,6 +25,8 @@
 		}
 
 		//echo "Connected successfully";
+		return $conn;
+
 		mysqli_close($conn);
 	}
 ?>

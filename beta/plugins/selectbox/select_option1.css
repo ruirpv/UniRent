@@ -320,14 +320,17 @@
 }
 /* CONTACT SELECT BOX */
 .contactSelect{
+	overflow: auto;
 	margin-bottom: 0;
 }
 .contactSelect .sbHolder, .contactSelect .sbSelector{
+	overflow: auto;
 	width: 100% !important;
 	height: 50px !important;
 }
 
 .contactSelect .sbHolder{
+	overflow: auto;
 	background-color: #ffffff;
 	border: none;
 	margin: 0;
@@ -335,16 +338,19 @@
 	border: 1px solid #e5e5e5;
 }
 .contactSelect .sbSelector:link, .contactSelect .sbSelector:visited, .contactSelect .sbSelector:hover{
+	overflow: auto;
 	color: #222222 !important;
   text-transform: capitalize;
 }
 .contactSelect .sbSelector{
+	overflow: auto;
 	font-family: 'Muli', sans-serif;
 	font-size: 14px;
 	line-height: 49px;
 	text-indent: 18px;
 }
 .contactSelect .sbToggle {
+	overflow: auto;
 	background: rgba(0, 0, 0, 0) url("images/light-drop.png") no-repeat scroll 0 0;
 	height: 6px;
 	right: 12px;
@@ -352,6 +358,7 @@
 	width: 9px;
 }
 .contactSelect .sbOptions{
+	overflow: auto;
 	width: 100% !important;
 	background-color: #ffffff;
 	border: 1px solid #dedede;
@@ -360,13 +367,16 @@
 	z-index: 100;
 }
 .contactSelect .sbOptions li{
+	overflow: auto;
 	padding: 4px;
 	border-bottom: 1px solid #dedede;
 }
 .contactSelect .sbOptions li:last-child{
+	overflow: auto;
 	border-bottom: none;
 }
 .contactSelect .sbOptions a{
+	overflow: auto;
 	color: #969696 !important;
 	font-family: "Montserrat",sans-serif;
 	font-size: 12px;
@@ -374,6 +384,7 @@
 	text-transform: uppercase;
 }
 .contactSelect .sbOptions a:hover{
+	overflow: auto;
     color: #2196f3 !important;
     background-color: #dedede;
 }
