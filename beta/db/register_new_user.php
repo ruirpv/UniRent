@@ -2,15 +2,30 @@
 	// Include function files for this application
 	require_once('unirent_functions.php');
 
-	// Contact Information variables
-	$firstName     = $_POST['firstName'];
-	$lastName      = $_POST['lastName'];
-	$emailAdress   = $_POST['emailAdress'];
+	// Personal Information variables
+	$firstName      = $_POST['firstName'];
+	$surname        = $_POST['surname'];
+	$emailAdress    = $_POST['emailAdress'];
+	$phoneNumber    = $_POST['phoneNumber'];
+	$dateOfBirthday = $_POST['dateOfBirthday'];
 
 	// Account Information variables
-	$username      = $_POST['username'];
-	$password      = $_POST['password'];
-	$passwordAgain = $_POST['passwordAgain'];
+	$username       = $_POST['username'];
+	$password       = $_POST['password'];
+	$passwordAgain  = $_POST['passwordAgain'];
+
+	// Address Information variables
+	$country        = $_POST['country'];
+	$city           = $_POST['city'];
+	$addressLine1   = $_POST['addressLine1'];
+	$addressLine2   = $_POST['addressLine2'];
+	$postalCode     = $_POST['postalCode'];
+	
+	// More Information variables
+	$nationality    = $_POST['nationality'];
+	$gender         = $_POST['gender'];
+	$studentNumber  = $_POST['studentNumber'];
+	$studentDegree  = $_POST['studentDegree'];
 
 	// Start session which may be needed later
 	// Start it now because it must go before headers
@@ -20,12 +35,13 @@
 		// Check forms filled in
 		if (!filled_out($_POST)) {
 			throw new Exception('You have not filled the form out correctly – please go back and try again.');
+			//BootstrapDialog.alert('I want banana!');
 		}
 
 		// Email address not valid
-		if (!valid_email($emailAdress)) {
-			throw new Exception('That is not a valid email address. Please go back and try again.');
-		}
+//		if (!valid_email($emailAdress)) {
+//			throw new Exception('That is not a valid email address. Please go back and try again.');
+//		}
 
 		// Passwords not the same
 		if ($password != $passwordAgain) {
@@ -39,17 +55,22 @@
 			throw new Exception('Your password must be between 6 and 16 characters. Please go back and try again.');
 		}
 
-		// Attempt to register
-		// This function can also throw an exception
-		register($firstName, $lastName, $emailAdress, $username, $password, $passwordAgain);
+		// Attempt to register Loing DB
+		register_Login($username, $password, $passwordAgain);
 
-		// register session variable
+		// Retrieve Login ID 
+		$Login_idLogin = retrieve_Login($emailAdress);
+
+		// Attempt to register Customer DB
+		register_Customer($firstName, $surname, $dateOfBirthday, $emailAdress, $phoneNumber, $nationality, $gender, $studentNumber, $studentDegree, $Login_idLogin);
+
+		// Register session variable
 		$_SESSION['valid_user'] = $username;
 
 		// provide link to members page
-//		do_html_header('Registration successful');
-//		echo 'Your registration was successful. Go to the members page to start setting up your bookmarks!';
-//		do_html_url('member.php', 'Go to members page');
+		do_html_header('Registration successful');
+		echo 'Your registration was successful!';
+		do_html_url('listings.php', 'Go to members page');
 
 		// end page
 //		do_html_footer();

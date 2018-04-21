@@ -67,23 +67,32 @@
 					<div class="signUpForm">
 						<form action="db/register_new_user.php" method="POST">
 							<div class="formSection">
-								<h3>Contact Information</h3>
+								<h3>Personal Information</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="firstName" class="control-label">First Name*</label>
 										<input type="text" class="form-control" id="firstName" name="firstName">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="lastName" class="control-label">Last Name*</label>
-										<input type="text" class="form-control" id="lastName" name="lastName">
+										<label for="surname" class="control-label">Surname*</label>
+										<input type="text" class="form-control" id="surname" name="surname">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="firstName" class="control-label">Email Address*</label>
+										<label for="emailAdress" class="control-label">Email Address*</label>
 										<input type="email" class="form-control" id="emailAdress" name="emailAdress">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="lastName" class="control-label">Phone Number*</label>
+										<label for="phoneNumber" class="control-label">Phone Number*</label>
 										<input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+									</div>
+									<div class="dateSelect col-sm-6 col-xs-12">
+										<label for="dateOfBirthday" class="control-label">Date of Birthday*</label>
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" class="form-control" name="dateOfBirthday" placeholder="mm/dd/yyyy">
+											<div class="input-group-addon">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -91,11 +100,11 @@
 								<h3>Account Information</h3>
 								<div class="row">
 									<div class="form-group col-xs-12">
-										<label for="usernames" class="control-label">Username*</label>
+										<label for="username" class="control-label">Username*</label>
 										<input type="text" class="form-control" id="username" name="username">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="passwordFirst" class="control-label">Password*</label>
+										<label for="password" class="control-label">Password*</label>
 										<input type="password" class="form-control" id="password" name="password">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
@@ -108,7 +117,7 @@
 								<h3>Address Information</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="selectSome" class="control-label">Country</label>
+										<label for="country" class="control-label">Country</label>
 										<div class="contactSelect">
 											<select name="country" id="country" class="select-drop">
 
@@ -129,7 +138,7 @@
 										</div>
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="selectSome" class="control-label">City</label>
+										<label for="city" class="control-label">City</label>
 										<div class="contactSelect">
 											<select name="city" id="city" class="select-drop">
 												
@@ -149,17 +158,29 @@
 											</select>
 										</div>
 									</div>
+									<div class="form-group col-xs-12">
+										<label for="addressLine1" class="control-label">Address Line 1*</label>
+										<input type="text" class="form-control" id="addressLine1" name="addressLine1">
+									</div>
+									<div class="form-group col-xs-12">
+										<label for="addressLine2" class="control-label">Address Line 2</label>
+										<input type="text" class="form-control" id="addressLine2" name="addressLine2">
+									</div>
+									<div class="form-group col-xs-6">
+										<label for="postalCode" class="control-label">Postal Code*</label>
+										<input type="text" class="form-control" id="postalCode" name="postalCode">
+									</div>
 								</div>
 							</div>
 							<div class="formSection">
 								<h3>More Information</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="usernames" class="control-label">Nationality*</label>
+										<label for="nationality" class="control-label">Nationality*</label>
 										<input type="text" class="form-control" id="nationality" name="nationality">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="selectSome" class="control-label">Gender</label>
+										<label for="gender" class="control-label">Gender</label>
 										<div class="contactSelect">
 											<select name="gender" id="gender" class="select-drop">
 												<option value="0">Male</option>
@@ -169,11 +190,11 @@
 										</div>
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="usernames" class="control-label">Student Number</label>
+										<label for="studentNumber" class="control-label">Student Number</label>
 										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="usernames" class="control-label">Student Degree</label>
+										<label for="studentDegree" class="control-label">Student Degree</label>
 										<input type="text" class="form-control" id="studentDegree" name="studentDegree">
 									</div>
 								</div>
@@ -214,6 +235,7 @@
 		</div>
 	</div>
 </section>
+
 
 <?php
   // disconnect to UniRent DB
