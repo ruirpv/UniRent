@@ -87,115 +87,258 @@
 </section>
 
 
-<!-- TOP RENTS SECTION-->
-<section class="clearfix articlesArea">
+<!-- APP DOWNLOAD SECTION -->
+<section class="clearfix appDownload">
   <div class="container">
     <div class="page-header text-center">
-      <h2>What People Like You Are Renting <small>This Are Some Of Most Popular Renting Stuffs Nowadays</small></h2>
+      <h2>Download on App Store</h2>
     </div>
     <div class="row">
       <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail articleContent">
-          <a href="blog-details.html"><img src="img/articles/article-1.jpg" alt="Image articles" class="img-responsive"></a>
-          <div class="caption">
-            <h4>Jan 22, 2018 by <a href="#">Jesualdo Fernandes</a></h4>
-            <h3><a href="#">GoPro Hero 4</a></h3>
-          </div>
-        </div>
+        <a href="#" class="btn btn-primary btn-transparent">
+          <i class="icon-listy icon-playstore"></i><span>available on <br><strong>Google Play</strong></span>
+        </a>
       </div>
       <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail articleContent">
-          <a href="blog-details.html"><img src="img/articles/article-2.jpg" alt="Image articles" class="img-responsive"></a>
-          <div class="caption">
-            <h4>jan 20, 2018 by <a href="#">Eduardo Rodrigues</a></h4>
-            <h3><a href="#">Calculadora HP profissional</a></h3>
-          </div>
-        </div>
+        <a href="#" class="btn btn-primary btn-transparent">
+          <i class="icon-listy icon-apple"></i><span>available on <br><strong>Google Play</strong></span>
+        </a>
       </div>
       <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail articleContent">
-          <a href="blog-details.html"><img src="img/articles/article-3.jpg" alt="Image articles" class="img-responsive"></a>
-          <div class="caption">
-            <h4>Jan 10, 2018 by <a href="#">Antônio Alvarenga</a></h4>
-            <h3><a href="#">TV LG 4K 2017</a></h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail articleContent">
-          <a href="blog-details.html"><img src="img/articles/article-1.jpg" alt="Image articles" class="img-responsive"></a>
-          <div class="caption">
-            <h4>Jan 22, 2018 by <a href="#">Pedro Pousa</a></h4>
-            <h3><a href="#">Teclado e Rato Microsoft Bluetooth</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail articleContent">
-          <a href="blog-details.html"><img src="img/articles/article-2.jpg" alt="Image articles" class="img-responsive"></a>
-          <div class="caption">
-            <h4>jan 20, 2018 by <a href="#">Rita Gonçalves</a></h4>
-            <h3><a href="#">Kevinhossauro</a></h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <div class="thumbnail articleContent">
-          <a href="blog-details.html"><img src="img/articles/article-3.jpg" alt="Image articles" class="img-responsive"></a>
-          <div class="caption">
-            <h4>Jan 10, 2018 by <a href="#">Mariana Henriques</a></h4>
-            <h3><a href="#">Cadeira e mesa de jantar</a></h3>
-          </div>
-        </div>
+        <a href="#" class="btn btn-primary btn-transparent">
+          <i class="icon-listy icon-microsoft"></i><span>available on <br><strong>Windows Store</strong></span>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 
+<!-- MOST RENTED SECTION -->
+<section class="clearfix filterProtfolio">
+  <div class="container">
+    <div class="page-header text-center">
+      <h2>What People Like You Are Renting <small>This Are Some Of Most Popular Renting Stuffs Nowadays</small></h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="filter-container isotopeFilters">
+          <ul class="list-inline filter">
+            <li class="active"><a href="#" data-filter="*">Popular Item</a></li>
+            <li><a href="#" data-filter=".recentItem">Recent Item</a></li>
+            <li><a href="#" data-filter=".featuredItem">Featured Item</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row isotopeContainer" id="container">
+      <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector featuredItem">
+        <article class="">
+          <figure>
+            <img src="img/cars/car-1.jpg" alt="Image Protfolio" class="img-responsive">
+            <div class="overlay-background">
+              <div class="inner"></div>
+            </div>
+            <a href="category-grid.html">
+              <div class="overlay">
+                <div class="overlayInfo">
+                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 11 k</span>
+                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 45</span>
+                </div>
+              </div>
+            </a>
+          </figure>
+          <div class="figureBody">
+            <h2><a href="category-grid.html">AUDI M3 E92 2016 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>19 Dec, 2017,  <a href="category-grid.html">AUDI</a></p>
+            <h3>$80,000</h3>
+          </div>
+          <div class="figureFooter">
+            <p>Brand New,  Automatic,  50 km/h</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector recentItem">
+        <article class="">
+          <figure>
+            <img src="img/cars/car-2.jpg" alt="Image Protfolio" class="img-responsive">
+            <div class="overlay-background">
+              <div class="inner"></div>
+            </div>
+            <a href="category-list-left.html">
+              <div class="overlay">
+                <div class="overlayInfo">
+                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 9k</span>
+                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i>25</span>
+                </div>
+              </div>
+            </a>
+          </figure>
+          <div class="figureBody">
+            <h2><a href="category-list-left.html">BMW NP E87 2018 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>25 jan, 2018,  <a href="category-list-left.html">BMW</a></p>
+            <h3>$90,000</h3>
+          </div>
+          <div class="figureFooter">
+            <p>Brand New,  Automatic,  80 km/h</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector recentItem">
+        <article class="">
+          <figure>
+            <img src="img/cars/car-3.jpg" alt="Image Protfolio" class="img-responsive">
+            <div class="overlay-background">
+              <div class="inner"></div>
+            </div>
+            <a href="category-grid-right.html">
+              <div class="overlay">
+                <div class="overlayInfo">
+                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 7.5k</span>
+                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 35</span>
+                </div>
+              </div>
+            </a>
+          </figure>
+          <div class="figureBody">
+            <h2><a href="category-grid-right.html">FERRARY F3 C95 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>29 Dec, 2017,  <a href="category-grid-right.html">FERRARY</a></p>
+            <h3>$70,000</h3>
+          </div>
+          <div class="figureFooter">
+            <p>Brand New,  Automatic,  60km/h</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector recentItem">
+        <article class="">
+          <figure>
+            <img src="img/cars/car-4.jpg" alt="Image Protfolio" class="img-responsive">
+            <div class="overlay-background">
+              <div class="inner"></div>
+            </div>
+            <a href="category-grid.html">
+              <div class="overlay">
+                <div class="overlayInfo">
+                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 9.8k</span>
+                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 39</span>
+                </div>
+              </div>
+            </a>
+          </figure>
+          <div class="figureBody">
+            <h2><a href="category-grid.html">DASTUN F9E 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>19 Nov, 2017,  <a href="category-grid.html">DASTUN</a></p>
+            <h3>$75,000</h3>
+          </div>
+          <div class="figureFooter">
+            <p>Brand New,  Automatic,  76 km/h</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector featuredItem">
+        <article class="">
+          <figure>
+            <img src="img/cars/car-5.jpg" alt="Image Protfolio" class="img-responsive">
+            <div class="overlay-background">
+              <div class="inner"></div>
+            </div>
+            <a href="category-list-full.html">
+              <div class="overlay">
+                <div class="overlayInfo">
+                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 9.1k</span>
+                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 68 </span>
+                </div>
+              </div>
+            </a>
+          </figure>
+          <div class="figureBody">
+            <h2><a href="category-list-full.html">HONDA XE E95 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>28 Feb, 2018,  <a href="category-list-full.html">HONDA</a></p>
+            <h3>$74,500</h3>
+          </div>
+          <div class="figureFooter">
+            <p>Brand New,  Automatic,  76 km/h</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12 isotopeSelector featuredItem">
+        <article class="">
+          <figure>
+            <img src="img/cars/car-6.jpg" alt="Image Protfolio" class="img-responsive">
+            <div class="overlay-background">
+              <div class="inner"></div>
+            </div>
+            <a href="category-list-left.html">
+              <div class="overlay">
+                <div class="overlayInfo">
+                  <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i>8.9 k</span>
+                  <span class="label label-primary"><i class="fa fa-camera" aria-hidden="true"></i> 45</span>
+                </div>
+              </div>
+            </a>
+          </figure>
+          <div class="figureBody">
+            <h2><a href="category-list-left.html">SUZUKI S4 E96 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>29 Jan, 2017,  <a href="category-list-left.html">SUZUKI</a></p>
+            <h3>$73,500</h3>
+          </div>
+          <div class="figureFooter">
+            <p>Brand New,  Automatic, 40km/h</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- BENEFITS SECTION -->
-<section class="clearfix worksArea">
+<section class="clearfix articlesArea">
 	<div class="container">
 		<div class="page-header text-center">
 			<h2>Your Main Benefits <small>We are sure that your short time need can be found here.</small></h2>
 		</div>
 		<div class="row">
-			<div class="col-sm-3 col-xs-12">
-				<a href="#" class="interestContent">
-					<span>
-						<i class="icon-listy icon-tea-cup-1"></i>
-						Convenience
-					</span>
-				</a>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<a href="#" class="interestContent">
-					<span>
-						<i class="icon-listy icon-building"></i>
-						Practicality
-					</span>
-				</a>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<a href="#" class="interestContent">
-					<span>
-						<i class="icon-listy icon-martini"></i>
-						Reduction of costs
-					</span>
-				</a>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<a href="#" class="interestContent">
-					<span>
-						<i class="icon-listy icon-car-1"></i>
-						Efficiency
-					</span>
-				</a>
-			</div>
-		</div>
+      <div class="col-xs-12">
+        <div class="servicesItem">
+          <ul class="list-inline listServices">
+            <li>
+              <div class="servicesIcon">
+                <i class="icon-listy icon-key"></i>
+              </div>
+              <div class="servicesInfo">
+                <h2>Secure Trading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod</p>
+              </div>
+            </li>
+            <li>
+              <div class="servicesIcon">
+                <i class="icon-listy icon-wreath"></i>
+              </div>
+              <div class="servicesInfo">
+                <h2>24/7 Hours Support</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod</p>
+              </div>
+            </li>
+            <li>
+              <div class="servicesIcon">
+                <i class="icon-listy icon-tag3"></i>
+              </div>
+              <div class="servicesInfo">
+                <h2>Easy Trading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
 	</div>
 </section>
 
