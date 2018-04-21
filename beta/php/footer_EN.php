@@ -15,7 +15,7 @@
                 <ul class="list-styled list-contact">
                   <li><i class="fa fa-phone" aria-hidden="true"></i>[+351] 657 524 332</li>
                   <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:contacto@unirent.online?Subject=Contact%20UniRent" target="_top">contacto@unirent.online</a></li>
-                  <li><i class="fa fa-globe" aria-hidden="true"></i><a href="#">Change language to <u>Portuguese</u></a></li>
+                  <li><i class="fa fa-globe" aria-hidden="true"></i><a href="index.php">Change language to <u>Portuguese</u></a></li>
                 </ul>
               </div>
             </div>
