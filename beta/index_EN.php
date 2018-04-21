@@ -2,8 +2,13 @@
 
 <?php
   require_once('php/header_index_EN.php');
+  require_once('db/unirent_functions.php');
+
   // print UniRent header
   do_unirent_header('UniRent');
+
+  // connect to UniRent DB
+  $conn = db_connect();
 ?>
 
 
@@ -139,7 +144,7 @@
             <div class="overlay-background">
               <div class="inner"></div>
             </div>
-            <a href="category-grid.html">
+            <a href="#">
               <div class="overlay">
                 <div class="overlayInfo">
                   <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 11 k</span>
@@ -149,8 +154,8 @@
             </a>
           </figure>
           <div class="figureBody">
-            <h2><a href="category-grid.html">AUDI M3 E92 2016 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-            <p>19 Dec, 2017,  <a href="category-grid.html">AUDI</a></p>
+            <h2><a href="#">AUDI M3 E92 2016 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>19 Dec, 2017</p>
             <h3>$80,000</h3>
           </div>
           <div class="figureFooter">
@@ -166,7 +171,7 @@
             <div class="overlay-background">
               <div class="inner"></div>
             </div>
-            <a href="category-list-left.html">
+            <a href="#">
               <div class="overlay">
                 <div class="overlayInfo">
                   <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 9k</span>
@@ -176,8 +181,8 @@
             </a>
           </figure>
           <div class="figureBody">
-            <h2><a href="category-list-left.html">BMW NP E87 2018 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-            <p>25 jan, 2018,  <a href="category-list-left.html">BMW</a></p>
+            <h2><a href="#">BMW NP E87 2018 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>25 jan, 2018</p>
             <h3>$90,000</h3>
           </div>
           <div class="figureFooter">
@@ -193,7 +198,7 @@
             <div class="overlay-background">
               <div class="inner"></div>
             </div>
-            <a href="category-grid-right.html">
+            <a href="#">
               <div class="overlay">
                 <div class="overlayInfo">
                   <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 7.5k</span>
@@ -203,8 +208,8 @@
             </a>
           </figure>
           <div class="figureBody">
-            <h2><a href="category-grid-right.html">FERRARY F3 C95 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-            <p>29 Dec, 2017,  <a href="category-grid-right.html">FERRARY</a></p>
+            <h2><a href="#">FERRARY F3 C95 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>29 Dec, 2017</p>
             <h3>$70,000</h3>
           </div>
           <div class="figureFooter">
@@ -220,7 +225,7 @@
             <div class="overlay-background">
               <div class="inner"></div>
             </div>
-            <a href="category-grid.html">
+            <a href="#">
               <div class="overlay">
                 <div class="overlayInfo">
                   <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 9.8k</span>
@@ -230,8 +235,8 @@
             </a>
           </figure>
           <div class="figureBody">
-            <h2><a href="category-grid.html">DASTUN F9E 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-            <p>19 Nov, 2017,  <a href="category-grid.html">DASTUN</a></p>
+            <h2><a href="#">DASTUN F9E 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>19 Nov, 2017</p>
             <h3>$75,000</h3>
           </div>
           <div class="figureFooter">
@@ -247,7 +252,7 @@
             <div class="overlay-background">
               <div class="inner"></div>
             </div>
-            <a href="category-list-full.html">
+            <a href="#">
               <div class="overlay">
                 <div class="overlayInfo">
                   <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i> 9.1k</span>
@@ -257,8 +262,8 @@
             </a>
           </figure>
           <div class="figureBody">
-            <h2><a href="category-list-full.html">HONDA XE E95 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-            <p>28 Feb, 2018,  <a href="category-list-full.html">HONDA</a></p>
+            <h2><a href="#">HONDA XE E95 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>28 Feb, 2018</p>
             <h3>$74,500</h3>
           </div>
           <div class="figureFooter">
@@ -274,7 +279,7 @@
             <div class="overlay-background">
               <div class="inner"></div>
             </div>
-            <a href="category-list-left.html">
+            <a href="#">
               <div class="overlay">
                 <div class="overlayInfo">
                   <span class="label label-primary"><i class="fa fa-heart-o" aria-hidden="true"></i>8.9 k</span>
@@ -284,8 +289,8 @@
             </a>
           </figure>
           <div class="figureBody">
-            <h2><a href="category-list-left.html">SUZUKI S4 E96 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
-            <p>29 Jan, 2017,  <a href="category-list-left.html">SUZUKI</a></p>
+            <h2><a href="#">SUZUKI S4 E96 2017 <i class="fa fa-check-circle" aria-hidden="true"></i></a></h2>
+            <p>29 Jan, 2017</p>
             <h3>$73,500</h3>
           </div>
           <div class="figureFooter">
@@ -345,44 +350,68 @@
 
 <!-- UNIRENT DATA SECTION -->
 <section class="clearfix countUpSection">
-	<div class="container">
-		<div class="page-header text-center">
-			<h2>Some data about <u>UniRent</u></h2>
-		</div>
-		<div class="row">
-			<div class="col-sm-3 col-xs-12">
-				<div class="text-center countItem">
-					<div class="counter">140</div>
-					<div class="counterInfo bg-color-1">Number of users</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="text-center countItem">
-					<div class="counter">120</div>
-					<div class="counterInfo bg-color-2">Things to rent</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="text-center countItem">
-					<div class="counter">60</div>
-					<div class="counterInfo bg-color-3">Things already rented</div>
-				</div>
-			</div>
-			<div class="col-sm-3 col-xs-12">
-				<div class="text-center countItem">
-					<div class="counter">30</div>
-					<div class="counterInfo bg-color-4">UniRent days of life</div>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<div class="btnArea text-center">
-					<a href="sign-up_EN.php" class="btn btn-primary">Get started</a>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="container">
+    <div class="page-header text-center">
+      <h2>Some data about <u>UniRent</u></h2>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 col-xs-12">
+        <div class="text-center countItem">
+          <div class="counter">
+            
+            <?php
+
+              $result_Customers = $conn->query("select * from Customer");
+              $row_Customers = $result_Customers->num_rows;
+              echo $row_Customers;
+
+            ?>
+
+          </div>
+          <div class="counterInfo bg-color-1">Number of users</div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="text-center countItem">
+          <div class="counter">
+
+            <?php
+
+              $result_ToRent = $conn->query("SELECT * FROM Item i WHERE NOT EXISTS(SELECT * FROM Rental r WHERE r.Item_ID = i.id)");
+              $row_ToRent = $result_ToRent->num_rows;
+              echo $row_ToRent;
+
+            ?>
+
+          </div>
+          <div class="counterInfo bg-color-2">Things to rent</div>
+        </div>
+      </div>
+      <div class="col-sm-4 col-xs-12">
+        <div class="text-center countItem">
+          <div class="counter">
+
+            <?php
+
+              $result_Rented = $conn->query("SELECT * FROM Item i WHERE EXISTS(SELECT * FROM Rental r WHERE r.Item_ID = i.id)");
+              $row_Rented = $result_Rented->num_rows;
+              echo $row_Rented;
+
+            ?>
+
+          </div>
+          <div class="counterInfo bg-color-3">Things already rented</div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="btnArea text-center">
+          <a href="sign-up.php" class="btn btn-primary">Get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 
@@ -523,7 +552,11 @@
 
 
 <?php
+  // disconnect to UniRent DB
+  $conn->close();
+
   require_once('php/footer_EN.php');
+
   // print UniRent header
   do_unirent_footer();
 ?>

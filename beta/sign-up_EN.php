@@ -11,6 +11,7 @@
   $conn = db_connect();
 ?>
 
+
 <style type="text/css">
  .scrollable{
    overflow: auto;
@@ -219,6 +220,7 @@
   $conn->close();
 
   require_once('php/footer_EN.php');
+  
   // print UniRent header
   do_unirent_footer();
 ?>

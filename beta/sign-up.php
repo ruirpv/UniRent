@@ -12,6 +12,18 @@
 ?>
 
 
+<style type="text/css">
+ .scrollable{
+   overflow: auto;
+   width: 270px; /* adjust this width depending to amount of text to display */
+   height: 120px; /* adjust height depending on number of options to display */
+ }
+ .scrollable select{
+   border: none;
+ }
+</style>
+
+
 <!-- PAGE TITLE SECTION -->
 <section class="clearfix pageTitleSection" style="background-image: url();">
 	<div class="container">
@@ -208,6 +220,7 @@
   $conn->close();
 
   require_once('php/footer.php');
+  
   // print UniRent header
   do_unirent_footer();
 ?>
