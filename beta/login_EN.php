@@ -19,12 +19,10 @@
 							<div class="form-group">
 								<label for="userName">User Name *</label>
 								<input type="text" class="form-control" id="userName">
-								<p class="help-block">Enter your Foundation username.</p>
 							</div>
 							<div class="form-group">
 								<label for="userPassword">Password *</label>
 								<input type="password" class="form-control" id="userPassword">
-								<p class="help-block">Enter the password that accompanies your username.</p>
 							</div>
 							<div class="form-group">
 								<button type="submit" class="btn btn-primary pull-left">Log In</button>
