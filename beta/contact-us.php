@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="pageTitle">
-					<h2>Contact Us</h2>
+					<h2>Contactos</h2>
 				</div>
 			</div>
 		</div>
@@ -49,41 +49,41 @@
 			<div class="col-sm-8 col-xs-12">
 				<div class="signUpFormArea">
 					<div class="priceTableTitle">
-						<h2>Get inTouch</h2>
-						<p>Please feel free to contact us if you have queries, require more information or have any other request.</p>
+						<h2>Entra em Contacto Connosco</h2>
+						<p>Por favor não tenhas medo de nos contactar se tiveres dúvidas, precisares de mais informações ou qualquer outra coisa.</p>
 					</div>
 					<div class="signUpForm">
 						<form action="#" method="">
 							<div class="formSection">
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="selectSome" class="control-label">Please choose a request type below*</label>
+										<label for="selectSome" class="control-label">Escolhe o tipo de pedido*</label>
 										<div class="contactSelect">
 											<select name="guiest_id8" id="guiest_id8" class="select-drop">
 												<option value="0">-- Select Subject --</option>
-												<option value="1">I am a Student (to rent)</option>
-												<option value="2">I am a Student (reting)</option>           
+												<option value="1">Quero alugar um bem</option>
+												<option value="2">Quero rentabilizar um bem</option>           
 											</select>
 										</div>
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="companyName" class="control-label">Subject*</label>
+										<label for="companyName" class="control-label">Assunto*</label>
 										<input type="text" class="form-control" id="companyName">
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="yourName" class="control-label">Your Name*</label>
+										<label for="yourName" class="control-label">Nome*</label>
 										<input type="text" class="form-control" id="yourName">
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="emailAddress" class="control-label">Email Address*</label>
+										<label for="emailAddress" class="control-label">Endereço de Email*</label>
 										<input type="email" class="form-control" id="emailAddress">
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="textBox" class="control-label">Text*</label>
+										<label for="textBox" class="control-label">Texto*</label>
 										<textarea class="form-control" rows="3"></textarea>
 									</div>
 									<div class="form-group col-xs-12 mb0">
-										<button type="submit" class="btn btn-primary">Send Now</button>
+										<button type="submit" class="btn btn-primary">Enviar</button>
 									</div>
 								</div>
 							</div>
