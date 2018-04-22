@@ -3,29 +3,33 @@
 	require_once('unirent_functions.php');
 
 	// Personal Information variables
-	$firstName      = $_POST['firstName'];
-	$surname        = $_POST['surname'];
-	$emailAdress    = $_POST['emailAdress'];
-	$phoneNumber    = $_POST['phoneNumber'];
-	$dateOfBirthday = $_POST['dateOfBirthday'];
+	$firstName      		  = $_POST['firstName'];
+	$surname        		  = $_POST['surname'];
+	$emailAdress    		  = $_POST['emailAdress'];
+	$phoneNumber    		  = $_POST['phoneNumber'];
+	$dateOfBirthday 		  = $_POST['dateOfBirthday'];
+	$nationality    		  = $_POST['nationality'];
+	$gender         		  = $_POST['gender'];
 
 	// Account Information variables
-	$username       = $_POST['username'];
-	$password       = $_POST['password'];
-	$passwordAgain  = $_POST['passwordAgain'];
+	$username       		  = $_POST['username'];
+	$password       		  = $_POST['password'];
+	$passwordAgain  		  = $_POST['passwordAgain'];
 
 	// Address Information variables
-	$country        = $_POST['country'];
-	$city           = $_POST['city'];
-	$addressLine1   = $_POST['addressLine1'];
-	$addressLine2   = $_POST['addressLine2'];
-	$postalCode     = $_POST['postalCode'];
+	$country        		  = $_POST['country'];
+	$city           		  = $_POST['city'];
+	$addressLine1   		  = $_POST['addressLine1'];
+	$addressLine2  		  	  = $_POST['addressLine2'];
+	$postalCode     		  = $_POST['postalCode'];
 	
-	// More Information variables
-	$nationality    = $_POST['nationality'];
-	$gender         = $_POST['gender'];
-	$studentNumber  = $_POST['studentNumber'];
-	$studentDegree  = $_POST['studentDegree'];
+	// Student Information variables
+	$countryOfStudy			  = $_POST['countryOfStudy'];
+	$EducationalEstablishment = $_POST['EducationalEstablishment'];
+	$courseArea  		  	  = $_POST['courseArea'];
+	$course          		  = $_POST['course'];
+	$studentDegree  		  = $_POST['studentDegree'];
+	$studentNumber  		  = $_POST['studentNumber'];
 
 	// Start session which may be needed later
 	// Start it now because it must go before headers
@@ -59,10 +63,13 @@
 		register_Login($username, $password, $passwordAgain);
 
 		// Retrieve Login ID 
-		$Login_idLogin = retrieve_Login($emailAdress);
+		$Login_idLogin = retrieve_Login($username);
+
+		// Attempt to register Address DB
+		$Address_id = register_Address($addressLine1, $addressLine2, $postalCode, $city, $country);
 
 		// Attempt to register Customer DB
-		register_Customer($firstName, $surname, $dateOfBirthday, $emailAdress, $phoneNumber, $nationality, $gender, $studentNumber, $studentDegree, $Login_idLogin);
+		register_Customer($firstName, $surname, $dateOfBirthday, $emailAdress, $phoneNumber, $nationality, $gender, $studentNumber, $studentDegree, $EducationalEstablishment, $course, $Address_id, $Login_idLogin);
 
 		// Register session variable
 		$_SESSION['valid_user'] = $username;
