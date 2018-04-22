@@ -43,7 +43,7 @@
     <div class="page-header text-center">
       <h1>Como Funciona</h1><br>
         <h3>UniRent é um serviço inovador para estudantes como Tu que precisam de um bem apenas por um curto período de tempo. É seguro, prático e permite que navegues em milhares de bens disponíveis para alugar e atender às tuas necessidades.<br><br>
-        <small>Nós oferecemos-te um solução simples dividida em 4 <b>facil</b> passos</small>
+        <small>Nós oferecemos-te um solução <b>fácil</b> e <b>simples</b> dividida em 4 passos</small>
       </h3>
     </div>
     <div class="row">
