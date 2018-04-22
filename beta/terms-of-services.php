@@ -13,7 +13,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="pageTitle">
-					<h2>Terms of Services</h2>
+					<h2>Termos de serviço</h2>
 				</div>
 			</div>
 		</div>
@@ -27,27 +27,27 @@
 			<div class="col-xs-12">
 				<ul class="list-unstyled termsList">
 					<li>
-						<p>To advertise your business please ensure that you read and abide by the following terms and conditions.</p>
+						<p>Para anunciar os seus serviços, por favor certifique-se de ler e cumprir os seguintes termos e condições.</p>
 					</li>
 					<li>
-						<h3>Fair use of site</h3>
-						<p>We are not responsible for any damages caused by the use of this website, or by posting business listings here. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
+						<h3>Uso justo do website</h3>
+						<p>Não nos responsabilizamos por estragos causados aquando da utilização do website ou na publicação de negócios. Por favor, utilize o nosso site a seu próprio critério e bom senso ao fazer anuncios de negócios no mesmo.</p>
 					</li>
 					<li>
-						<h3>Business deletion</h3>
-						<p>We reserve the right to remove any business listings if we feel that they're infringing on any laws or if they contain objectionable material such as adult content (including images, vulgar language, content or links). In such cases, the business poster will receive a full refund for the listing.</p>
+						<h3>Exclusão de negócio</h3>
+						<p> Temos o direito reservado de remover publicações que estejam de algum modo a infrigir a lei ou sejam consideradas impróprias se contiverem material censurável, como conteúdo adulto (incluindo imagens, linguagem vulgar, conteúdo ou links). Nesses casos, o anunciante receberá um reembolso total da listagem.</p>
 					</li>
 					<li>
-						<h3>Security and privacy</h3>
-						<p>We make every possible attempt to keep your personal information safe, using the latest technology in Internet security. However, you should be aware that our site, as well as any other site, can potentially be a target for hackers. Please do not post any information on the site that is sensitive or that you would not want disclosed in case of an unlikely security breach. We use cookies to store information locally for advanced features of the site's operation, such as favorites, notes and alerts. Your personal details are not shared, rented or sold to any external companies or advertisers under any circumstances. Your credit card details and Paypal account details are only known to Paypal. You may review Paypal's agreements and policies for further information about how they safeguard your information. For security information, please visit: Paypal's security center .  For more information, please view Paypal's current <a href="https://www.paypal.com/pt/webapps/mpp/ua/privacy-full" target="_blank">privacy policy</a>.</p>
+						<h3>Segurança e Privacidade</h3>
+						<p>Fazemos o possível para manter as suas informações pessoais seguras, usando a mais recente tecnologia de segurança na Internet. No entanto, é de frizar que o nosso site, assim como qualquer outro, pode ser um alvo para hackers. Por favor, não poste nenhuma informação no site que seja sensível ou que não queira divulgar no caso de uma violação de segurança improvável. Usamos cookies para armazenar informações localmente para recursos avançados de operação do site, como favoritos, notas e alertas. Os seus dados pessoais não são compartilhados, alugados ou vendidos a empresas ou anunciantes externos sob nenhuma circunstância. Os dados do seu cartão de crédito e detalhes da conta Paypal são apenas conhecidos pelo Paypal. Pode rever os acordos e políticas do Paypal para obter mais informações sobre a proteção dos seus dados. Para informações de segurança, por favor visite: Central de segurança do Paypal. Para mais informações, consulte a versão <a href="https://www.paypal.com/pt/webapps/mpp/ua/privacy-full" target="_blank">politica de privacidade</a>atual do Paypal.</p>
 					</li>
 					<li>
-						<h3>Governing Law</h3>
-						<p>These Terms shall be governed and construed in accordance with the laws of Ontario, Canada, without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+						<h3>Lei aplicável</h3>
+						<p>Estes Termos serão regidos e interpretados de acordo com as leis de Ontário, Canadá, sem levar em conta o conflito de provisões legais. A nossa falha em aplicar qualquer direito ou disposição destes Termos não será considerada uma renúncia a esses direitos. Se qualquer disposição destes Termos for considerada inválida ou inexequível por um tribunal, as disposições restantes destes Termos permanecerão em vigor. Estes Termos constituem o acordo integral entre nós em relação ao nosso Serviço e substituem quaisquer acordos anteriores que possamos ter entre nós em relação ao Serviço.</p>
 					</li>
 					<li>
-						<h3>Contact Us</h3>
-						<p>f you have any questions, concerns, or suggestions regarding this terms, please <a href="contact-us.html">contact us</a>.</p>
+						<h3>Contacte-nos</h3>
+						<p>Se tiver alguma questão, preocupação ou sugestão sobre estes termos, por favor <a href="contact-us.html">contacte-nos</a>.</p>
 					</li>
 				</ul>
 			</div>

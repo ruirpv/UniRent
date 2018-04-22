@@ -18,17 +18,17 @@
     <div class="row">
       <div class="col-xs-12">
         <div class="banerInfo">
-          <h1>All you can think, you can rent</h1>
-          <p>The student's renting marketplace</p>
+          <h1>Aluga tudo o que imaginares</h1>
+          <p>O mercado de aluguer para estudantes</p>
           <form class="form-inline" action="#" method="">
             <div class="form-group">
               <div class="input-group">
-                <div class="input-group-addon">Find</div>
-                <input type="text" class="form-control" id="findItem" placeholder="What are you looking for?">
+                <div class="input-group-addon">Encontrar</div>
+                <input type="text" class="form-control" id="findItem" placeholder="O que estás a procurar?">
                 <div class="input-group-addon addon-right"></div>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+            <button type="submit" class="btn btn-primary">Pesquisar <i class="fa fa-search" aria-hidden="true"></i></button>
           </form>
         </div>
       </div>
@@ -41,18 +41,18 @@
 <section class="clearfix worksArea">
   <div class="container">
     <div class="page-header text-center">
-      <h1>How it Works?</h1><br>
-        <h2>UniRent is an innovative service for students like you who need an item just for a short period of time. It's safe and practical, and lets you browse thousands of items available to rent and match your needs.<br>
-        <small>We give you a simple solution divided in 4 <b>easy</b> steps</small>
-      </h2>
+      <h1>Como Funciona</h1><br>
+        <h3>UniRent é um serviço inovador para estudantes como Tu que precisam de um bem apenas por um curto período de tempo. É seguro, prático e permite que navegues em milhares de bens disponíveis para alugar e atender às tuas necessidades.<br><br>
+        <small>Nós oferecemos-te um solução simples dividida em 4 <b>facil</b> passos</small>
+      </h3>
     </div>
     <div class="row">
       <div class="col-sm-3 col-xs-10">
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Need.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Need</h3></a>
-            <p>You had a need of an item, and the best way is to rent instead of buying.</p>
+            <a href="how-it-works.php"><h3>Necessidade</h3></a>
+            <p>Tu tens a necessidade de um bem e a melhor forma é alugar em vez de comprar.</p>
           </div>
         </div>
       </div>
@@ -60,8 +60,8 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Search.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Search</h3></a>
-            <p>You search for this item that you would like to rent in our platform.</p>
+            <a href="how-it-works.php"><h3>Pesquisar</h3></a>
+            <p>Procura pelo bem que gostarias de alugar na nossa plataforma.</p>
           </div>
         </div>
       </div>
@@ -69,8 +69,8 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Rent.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Rent</h3></a>
-            <p>Rent any item you need straight from its Owner in a easy way.</p>
+            <a href="how-it-works.php"><h3>Alugar</h3></a>
+            <p>Aluga qualquer bem diretamente do Proprietário de uma maneira fácil.</p>
           </div>
         </div>
       </div>
@@ -78,14 +78,14 @@
         <div class="thumbnail text-center worksContent">
           <img src="img/works/Return.png" width="160" width="160" alt="Image works">
           <div class="caption">
-            <a href="how-it-works.php"><h3>Return</h3></a>
-            <p>After used you return the item to its owner at a convenient time for both.</p>
+            <a href="how-it-works.php"><h3>Devolver</h3></a>
+            <p>Depois de usares devolves o bem ao seu proprietário da forma mais conveniente.</p>
           </div>
         </div>
       </div>
     <div class="row">
       <div class="col-xs-12">
-        <div class="btnArea text-center"><a href="#" class="btn btn-primary">Watch it now <i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
+        <div class="btnArea text-center"><a href="#" class="btn btn-primary">Veja agora <i class="fa fa-play-circle" aria-hidden="true"></i></a></div>
       </div>
     </div>
   </div>
@@ -96,22 +96,22 @@
 <section class="clearfix appDownload">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Download on App Store</h2>
+      <h2>Baixar na App Store</h2>
     </div>
     <div class="row">
       <div class="col-sm-4 col-xs-12">
         <a href="#" class="btn btn-primary btn-transparent">
-          <i class="icon-listy icon-playstore"></i><span>available on <br><strong>Google Play</strong></span>
+          <i class="icon-listy icon-playstore"></i><span>disponível em <br><strong>Google Play</strong></span>
         </a>
       </div>
       <div class="col-sm-4 col-xs-12">
         <a href="#" class="btn btn-primary btn-transparent">
-          <i class="icon-listy icon-apple"></i><span>available on <br><strong>Google Play</strong></span>
+          <i class="icon-listy icon-apple"></i><span>disponível em <br><strong>Google Play</strong></span>
         </a>
       </div>
       <div class="col-sm-4 col-xs-12">
         <a href="#" class="btn btn-primary btn-transparent">
-          <i class="icon-listy icon-microsoft"></i><span>available on <br><strong>Windows Store</strong></span>
+          <i class="icon-listy icon-microsoft"></i><span>disponível em <br><strong>Windows Store</strong></span>
         </a>
       </div>
     </div>
@@ -123,15 +123,15 @@
 <section class="clearfix filterProtfolio">
   <div class="container">
     <div class="page-header text-center">
-      <h2>What People Like You Are Renting <small>This Are Some Of Most Popular Renting Stuffs Nowadays</small></h2>
+      <h2>O que pessoas como Tu estão a alugar. <small> Alguns dos bens atualmente mais alugados </small></h2>
     </div>
     <div class="row">
       <div class="col-xs-12">
         <div class="filter-container isotopeFilters">
           <ul class="list-inline filter">
-            <li class="active"><a href="#" data-filter="*">Popular Item</a></li>
-            <li><a href="#" data-filter=".recentItem">Recent Item</a></li>
-            <li><a href="#" data-filter=".featuredItem">Featured Item</a></li>
+            <li class="active"><a href="#" data-filter="*">Itens popular</a></li>
+            <li><a href="#" data-filter=".recentItem">Itens recente</a></li>
+            <li><a href="#" data-filter=".featuredItem">Itens destacado</a></li>
           </ul>
         </div>
       </div>
@@ -308,7 +308,7 @@
 <section class="clearfix articlesArea">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Your Main Benefits <small>We are sure that your short time need can be found here.</small></h2>
+      <h2>Os Teus Principais Benefícios <small>Estamos certos que a tua necessidade pode ser satisfeita aqui.</small></h2>
     </div>
     <div class="row">
       <div class="col-xs-12">
@@ -319,7 +319,7 @@
                 <i class="icon-listy icon-key"></i>
               </div>
               <div class="servicesInfo">
-                <h2>Secure Trading</h2>
+                <h2>Negociação Segura</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod</p>
               </div>
             </li>
@@ -328,7 +328,7 @@
                 <i class="icon-listy icon-wreath"></i>
               </div>
               <div class="servicesInfo">
-                <h2>24/7 Hours Support</h2>
+                <h2>Suporte 24 horas por dia, 7 dias por semana</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod</p>
               </div>
             </li>
@@ -337,7 +337,7 @@
                 <i class="icon-listy icon-tag3"></i>
               </div>
               <div class="servicesInfo">
-                <h2>Easy Trading</h2>
+                <h2>Negociação Fácil</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed eiusmod</p>
               </div>
             </li>
@@ -352,7 +352,7 @@
 <section class="clearfix countUpSection">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Some data about <u>UniRent</u></h2>
+      <h2>Mais informação sobre Nós <u>UniRent</u></h2>
     </div>
     <div class="row">
       <div class="col-sm-4 col-xs-12">
@@ -368,7 +368,7 @@
             ?>
 
           </div>
-          <div class="counterInfo bg-color-1">Number of users</div>
+          <div class="counterInfo bg-color-1">Número de utilizadores</div>
         </div>
       </div>
       <div class="col-sm-4 col-xs-12">
@@ -384,7 +384,7 @@
             ?>
 
           </div>
-          <div class="counterInfo bg-color-2">Things to rent</div>
+          <div class="counterInfo bg-color-2">O que podes alugar</div>
         </div>
       </div>
       <div class="col-sm-4 col-xs-12">
@@ -400,14 +400,14 @@
             ?>
 
           </div>
-          <div class="counterInfo bg-color-3">Things already rented</div>
+          <div class="counterInfo bg-color-3">Bens já alugados</div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-xs-12">
         <div class="btnArea text-center">
-          <a href="sign-up.php" class="btn btn-primary">Get started</a>
+          <a href="sign-up.php" class="btn btn-primary">Começa já</a>
         </div>
       </div>
     </div>
@@ -419,7 +419,7 @@
 <section class="clearfix thingsArea">
   <div class="container">
     <div class="page-header text-center">
-      <h2>Meet Our Team <small>5 Crazy Friends From ISEG - Lisbon To The World</small></h2>
+      <h2>Conhece a nossa Equipa <small>5 Amigos Loucos do ISEG - Lisboa para o Mundo</small></h2>
     </div>
     <div class="row">
       <div class="col-xs-12">
@@ -532,12 +532,12 @@
     <div class="row">
       <div class="col-md-10 col-sm-9 col-xs-12">
         <div class="callInfo">
-          <h4><span>UniRent</span> is the <span>best way</span> <br>to Find Great Products for a short time</h4>
+          <h4><span>UniRent</span> é a <span>melhor maneira</span> <br>para encontrar os Melhores Produtos para um curto tempo</h4>
         </div>
       </div>
       <div class="col-md-2 col-sm-3 col-xs-12">
         <div class="btnArea">
-          <a href="sign-up.php" class="btn btn-primary btn-block">Get Started</a>
+          <a href="sign-up.php" class="btn btn-primary btn-block">Começa já</a>
         </div>
       </div>
     </div>

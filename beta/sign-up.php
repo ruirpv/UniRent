@@ -30,7 +30,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="pageTitle">
-					<h2>Sign Up Page</h2>
+					<h2>Página de inscrição</h2>
 				</div>
 			</div>
 		</div>
@@ -45,15 +45,15 @@
 			<div class="col-sm-4 col-xs-12">
 				<div class="priceTableWrapper">
 					<div class="priceTableTitle">
-						<h2>Free <small>Pay only by your rentals</small></h2>
+						<h2>Grátis <small>Paga apenas o que alugas</small></h2>
 					</div>
 					<div class="priceAmount">
-						<h2>0<small> USD/Year</small></h2>
+						<h2>0<small> EUR/Ano</small></h2>
 					</div>
 					<div class="priceInfo">
 						<ul class="list-unstyled">
-							<li>15% of the transaction is ours</li>
-							<li>And the rest to the renter</li>
+							<li>15% da transacção pertence à UniRent</li>
+							<li>E o restante, do anunciante</li>
 						</ul>
 					</div>
 				</div>
@@ -61,24 +61,24 @@
 			<div class="col-sm-8 col-xs-12">
 				<div class="signUpFormArea">
 					<div class="priceTableTitle">
-						<h2>Account Registration</h2>
-						<p>Please fill out the fields below to create your account. We will send your account information to the email address you enter. Your email address and information will NOT be sold or shared with any 3rd party. If you already have an account, please, <a href="login.php">click here</a>.</p>
+						<h2>Registo de conta</h2>
+						<p>Por favor preenche os campos abaixo para criares a tua conta. De seguida, iremos enviar as informações da tua conta para o email registado. As tuas informações e o teu email NÃO serão vendidos ou partilhados com uma terceira parte. Se já tens uma conta criada, por favor <a href="login.php">clica aqui</a>.</p>
 					</div>
 					<div class="signUpForm">
 						<form action="db/register_new_user.php" method="POST">
 							<div class="formSection">
-								<h3>Personal Information</h3>
+								<h3>Informaçõe de contacto</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="firstName" class="control-label">First Name*</label>
+										<label for="firstName" class="control-label">Primeiro nome*</label>
 										<input type="text" class="form-control" id="firstName" name="firstName">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="surname" class="control-label">Surname*</label>
+										<label for="surname" class="control-label">Último nome*</label>
 										<input type="text" class="form-control" id="surname" name="surname">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="emailAdress" class="control-label">Email Address*</label>
+										<label for="emailAdress" class="control-label">Endereço de Email*</label>
 										<input type="email" class="form-control" id="emailAdress" name="emailAdress">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
@@ -100,15 +100,15 @@
 								<h3>Account Information</h3>
 								<div class="row">
 									<div class="form-group col-xs-12">
-										<label for="username" class="control-label">Username*</label>
+										<label for="username" class="control-label">Nome de utilizador*</label>
 										<input type="text" class="form-control" id="username" name="username">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="password" class="control-label">Password*</label>
+										<label for="password" class="control-label">Palavra passe*</label>
 										<input type="password" class="form-control" id="password" name="password">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="passwordAgain" class="control-label">Password (re-type)*</label>
+										<label for="passwordAgain" class="control-label">Palavra passe (confirmação)*</label>
 										<input type="password" class="form-control" id="passwordAgain" name="passwordAgain">
 									</div>
 								</div>
@@ -200,17 +200,17 @@
 								</div>
 							</div>
 							<div class="formSection">
-								<h3>Security Control</h3>
+								<h3>Controlo de segurança</h3>
 									<div class="form-group col-xs-12">
 										<div class="checkbox">
 											<label>
 												<input type="checkbox">
-												I agree to the <a href="terms-of-services.php">Terms of Use</a>. Your business listing is fully backed by our 100% money back guarantee.
+												Eu concordo com os <a href="terms-of-services.php">termos de utilização</a>. A tua listagem de empresas é totalmente coberta pela nossa garantia de reembolso de dinheiro a 100%.
 											</label>
 										</div>
 									</div>
 									<div class="form-group col-xs-12 mb0">
-										<button type="submit" name="submit" class="btn btn-primary">Create Account</button>
+										<button type="submit" name="submit" class="btn btn-primary">Criar Conta</button>
 									</div>
 								</div>
 							</div>
@@ -226,7 +226,7 @@
 										<li><a href="#"><img src="img/business/discover.jpg" alt="Image card"></a></li>
 									</ul>
 								</div>
-								<p>We use <span>PayPal</span> to process all transactions securely. <span>Payments can be made using any major credit card, without the need for a PayPal account</span>. If you already have a PayPal account, you can also pay with PayPal funds or through your bank account. We don't keep any credit card information stored on our site. No tax is added to your order. For more information <a href="https://www.paypal.com" target="_blank">www.paypal.com</a></p>
+								<p>Nós usamos <span>PayPal</span> para processar todas as transações de forma segura. <span>Pagamentos podem ser feitos com o uso de qualquer cartão de crédito, sem a necessidade de uma conta PayPal </span>. Se já tens uma conta PayPal, podes também pagar com os fundos do PayPal ou através da tua conta bancária. Não ficamos com nenhuma informação sobre o teu cartão de crédito armazenada no nosso site. Nenhuma taxa é adicionada à tua compra. Para mais informações <a href="https://www.paypal.com" target="_blank">www.paypal.com</a></p>
 							</div>
 						</form>
 					</div>
