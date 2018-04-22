@@ -21,12 +21,10 @@
 							<div class="form-group">
 								<label for="userName">Username *</label>
 								<input type="text" class="form-control" id="userName">
-								<p class="help-block">Escreve um Username.</p>
 							</div>
 							<div class="form-group">
 								<label for="userPassword">Password *</label>
 								<input type="password" class="form-control" id="userPassword">
-								<p class="help-block">Escreve uma Password.</p>
 							</div>
 							<div class="form-group">
 								<button type="submit" class="btn btn-primary pull-left">Login</button>
