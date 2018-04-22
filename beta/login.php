@@ -15,25 +15,27 @@
 		<div class="row">
 			<div class="center-block col-md-5 col-sm-6 col-xs-12">
 				<div class="panel panel-default loginPanel">
-					<div class="panel-heading text-center">Members log in</div>
+					<div class="panel-heading text-center">Login de Utilizadores</div>
 					<div class="panel-body">
 						<form class="loginForm">
 							<div class="form-group">
-								<label for="userName">User Name *</label>
+								<label for="userName">Username *</label>
 								<input type="text" class="form-control" id="userName">
+								<p class="help-block">Escreve um Username.</p>
 							</div>
 							<div class="form-group">
 								<label for="userPassword">Password *</label>
 								<input type="password" class="form-control" id="userPassword">
+								<p class="help-block">Escreve uma Password.</p>
 							</div>
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary pull-left">Log In</button>
-								<a href="#" class="pull-right link">Fogot Password?</a>
+								<button type="submit" class="btn btn-primary pull-left">Login</button>
+								<a href="#" class="pull-right link">Esqueci-me da Password</a>
 							</div>
 						</form>
 					</div>
 					<div class="panel-footer text-center">
-						<p>Not a member yet? <a href="sign-up.php" class="link">Sign up</a></p>
+						<p>Ainda não tens conta?<a href="sign-up.php" class="link">Sign up</a></p>
 					</div>
 				</div>
 			</div>
