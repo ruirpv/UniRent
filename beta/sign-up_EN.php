@@ -94,6 +94,20 @@
 											</div>
 										</div>
 									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="nationality" class="control-label">Nationality*</label>
+										<input type="text" class="form-control" id="nationality" name="nationality">
+									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="gender" class="control-label">Gender</label>
+										<div class="contactSelect">
+											<select name="gender" id="gender" class="select-drop">
+												<option value="0">Male</option>
+												<option value="1">Female</option>
+												<option value="2">No specified</option>           
+											</select>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="formSection">
@@ -175,20 +189,6 @@
 							<div class="formSection">
 								<h3>Student Information</h3>
 								<div class="row">
-									<div class="form-group col-sm-6 col-xs-12">
-										<label for="nationality" class="control-label">Nationality*</label>
-										<input type="text" class="form-control" id="nationality" name="nationality">
-									</div>
-									<div class="form-group col-sm-6 col-xs-12">
-										<label for="gender" class="control-label">Gender</label>
-										<div class="contactSelect">
-											<select name="gender" id="gender" class="select-drop">
-												<option value="0">Male</option>
-												<option value="1">Female</option>
-												<option value="2">No specified</option>           
-											</select>
-										</div>
-									</div>
 									<div class="form-group col-xs-12">
 										<label for="studentNumber" class="control-label">Student Number</label>
 										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
