@@ -173,7 +173,7 @@
 								</div>
 							</div>
 							<div class="formSection">
-								<h3>More Information</h3>
+								<h3>Student Information</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="nationality" class="control-label">Nationality*</label>

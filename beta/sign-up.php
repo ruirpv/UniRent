@@ -67,7 +67,7 @@
 					<div class="signUpForm">
 						<form action="db/register_new_user.php" method="POST">
 							<div class="formSection">
-								<h3>Informaçõe de contacto</h3>
+								<h3>Informações de contacto</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="firstName" class="control-label">Primeiro nome*</label>
@@ -82,11 +82,11 @@
 										<input type="email" class="form-control" id="emailAdress" name="emailAdress">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="phoneNumber" class="control-label">Phone Number*</label>
+										<label for="phoneNumber" class="control-label">Número de telemóvel*</label>
 										<input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
 									</div>
 									<div class="dateSelect col-sm-6 col-xs-12">
-										<label for="dateOfBirthday" class="control-label">Date of Birthday*</label>
+										<label for="dateOfBirthday" class="control-label">Data de nascimento*</label>
 										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
 											<input type="text" class="form-control" name="dateOfBirthday" placeholder="mm/dd/yyyy">
 											<div class="input-group-addon">
@@ -97,7 +97,7 @@
 								</div>
 							</div>
 							<div class="formSection">
-								<h3>Account Information</h3>
+								<h3>Informações de conta</h3>
 								<div class="row">
 									<div class="form-group col-xs-12">
 										<label for="username" class="control-label">Nome de utilizador*</label>
@@ -114,10 +114,10 @@
 								</div>
 							</div>
 							<div class="formSection">
-								<h3>Address Information</h3>
+								<h3>Informações de morada</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="country" class="control-label">Country</label>
+										<label for="country" class="control-label">País</label>
 										<div class="contactSelect">
 											<select name="country" id="country" class="select-drop">
 
@@ -138,7 +138,7 @@
 										</div>
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="city" class="control-label">City</label>
+										<label for="city" class="control-label">Cidade</label>
 										<div class="contactSelect">
 											<select name="city" id="city" class="select-drop">
 												
@@ -159,42 +159,42 @@
 										</div>
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="addressLine1" class="control-label">Address Line 1*</label>
+										<label for="addressLine1" class="control-label">Morada linha 1*</label>
 										<input type="text" class="form-control" id="addressLine1" name="addressLine1">
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="addressLine2" class="control-label">Address Line 2</label>
+										<label for="addressLine2" class="control-label">Morada linha 2</label>
 										<input type="text" class="form-control" id="addressLine2" name="addressLine2">
 									</div>
 									<div class="form-group col-xs-6">
-										<label for="postalCode" class="control-label">Postal Code*</label>
+										<label for="postalCode" class="control-label">Código de postal*</label>
 										<input type="text" class="form-control" id="postalCode" name="postalCode">
 									</div>
 								</div>
 							</div>
 							<div class="formSection">
-								<h3>More Information</h3>
+								<h3>Informação do estudante</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="nationality" class="control-label">Nationality*</label>
+										<label for="nationality" class="control-label">Nacionalidade*</label>
 										<input type="text" class="form-control" id="nationality" name="nationality">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="gender" class="control-label">Gender</label>
+										<label for="gender" class="control-label">Género</label>
 										<div class="contactSelect">
 											<select name="gender" id="gender" class="select-drop">
-												<option value="0">Male</option>
-												<option value="1">Female</option>
-												<option value="2">No specified</option>           
+												<option value="0">Masculino</option>
+												<option value="1">Feminino</option>
+												<option value="2">Não especificar</option>           
 											</select>
 										</div>
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="studentNumber" class="control-label">Student Number</label>
+										<label for="studentNumber" class="control-label">Número de estudante</label>
 										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
 									</div>
 									<div class="form-group col-xs-12">
-										<label for="studentDegree" class="control-label">Student Degree</label>
+										<label for="studentDegree" class="control-label">Grau de ensino</label>
 										<input type="text" class="form-control" id="studentDegree" name="studentDegree">
 									</div>
 								</div>

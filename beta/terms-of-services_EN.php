@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header.php');
+  require_once('php/header_EN.php');
   // print UniRent header
   do_unirent_header('Terms of services - UniRent');
 ?>
@@ -47,7 +47,7 @@
 					</li>
 					<li>
 						<h3>Contact Us</h3>
-						<p>f you have any questions, concerns, or suggestions regarding this terms, please <a href="contact-us.html">contact us</a>.</p>
+						<p>f you have any questions, concerns, or suggestions regarding this terms, please <a href="contact-us.php">contact us</a>.</p>
 					</li>
 				</ul>
 			</div>

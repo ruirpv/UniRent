@@ -47,7 +47,7 @@
 					</li>
 					<li>
 						<h3>Contacte-nos</h3>
-						<p>Se tiver alguma questão, preocupação ou sugestão sobre estes termos, por favor <a href="contact-us.html">contacte-nos</a>.</p>
+						<p>Se tiver alguma questão, preocupação ou sugestão sobre estes termos, por favor <a href="contact-us.php">contacte-nos</a>.</p>
 					</li>
 				</ul>
 			</div>
