@@ -31,7 +31,7 @@
           <div class="collapse navbar-collapse navbar-dash">
             <ul class="nav navbar-nav mr0">
               <li class="active">
-                <a href="#"><i aria-hidden="true"></i> <?php echo  "Bem vindo: " . $login_session; ?></a>
+                <a href="#"><i aria-hidden="true"></i> <?php echo  "Welcome: " . $login_session; ?></a>
               </li>
               <li><a href="#"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a></li>
               <li class="dropdown singleDrop">
