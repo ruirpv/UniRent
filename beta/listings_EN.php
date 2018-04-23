@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header_listings.php');
+  require_once('php/header_listings_EN.php');
   //require_once('db/unirent_functions.php');
   include('db/session.php');
 
@@ -35,15 +35,15 @@
               </li>
               <li><a href="#"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a></li>
               <li class="dropdown singleDrop">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Aluguéis <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Rents <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li><a href="#">Meus aluguéis</a></li>
-                  <li><a href="#">Adicionar um aluguel</a></li>
-                  <li><a href="#">Editar meus aluguéis</a></li>
+                  <li><a href="#">My rents</a></li>
+                  <li><a href="#">Add a rent</a></li>
+                  <li><a href="#">Edit my rents</a></li>
                 </ul>
               </li>
               <li class="dropdown singleDrop">
-                <a href="#" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Alugados</a>
+                <a href="#" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Rented</a>
               </li>
             </ul>
             <div class="row adjustRow">
@@ -70,7 +70,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<div class="dashboardPageTitle">
-					<h2>Meus aluguéis</h2>
+					<h2>My rents</h2>
 				</div>
 				<div class="table-responsive"  data-pattern="priority-columns">
 					<table class="table listingsTable">
@@ -265,7 +265,7 @@
   // disconnect to UniRent DB
   //$conn->close();
 
-  require_once('php/footer_listings.php');
+  require_once('php/footer_listings_EN.php');
 
   // print UniRent header
   do_unirent_footer();
