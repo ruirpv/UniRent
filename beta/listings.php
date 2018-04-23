@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header_listings.php');
+  require_once('php/header_listings_index.php');
   //require_once('db/unirent_functions.php');
   include('db/session.php');
 
