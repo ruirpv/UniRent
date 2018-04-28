@@ -19,8 +19,25 @@
 			$password = $_POST['password'];
 			
 			// SQL query to fetch information of registerd users and finds user match.
-			$result = $conn->query("select * from Login where username = '$username' AND password = '$password'");
-			//$rows = mysql_num_rows($query);
+			/**$getSHA1Password = $conn->query("select SHA1('$password') from Login where username = '$username'");
+
+
+			if (!$getSHA1Password) {
+				echo "Something is wrong with SHA1 Password!!";
+			}
+
+			// SHA1 password variable
+			$passwordSHA1;
+
+			if ($getSHA1Password->num_rows > 0) {
+				while ($row = $getSHA1Password->fetch_assoc()) {
+					unset($passwordSHA1);
+		            $passwordSHA1 = $row['password'];
+				}
+			}*/
+
+			//$result = $conn->query("select * from Login where username = '$username' AND password = '$passwordSHA1'");
+			$result = $conn->query("select * from Login where username = '$username'");
 
 			if (!$result) {
 				echo "Something is wrong!!";
