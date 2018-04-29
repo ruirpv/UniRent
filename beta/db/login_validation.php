@@ -11,7 +11,7 @@
 	if (isset($_POST['submit'])) {
 		$pageName = $_POST['pageName'];
 		if (empty($_POST['username']) || empty($_POST['password'])) {
-			$error = "Username or Password is invalid1";
+			$error = "Username or Password is invalid";
 			echo $error;
 		} else {
 			// Define $username and $password
