@@ -15,6 +15,27 @@
 	$Login_idLogin = retrieve_Login($login_session);
 
 	/*********************************************************************************/
+	/************************************ LOGIN DB ***********************************/
+	/*********************************************************************************/
+
+	// check for Customer data in Customer DB
+	$result_login = $conn->query("select password from Login where id = " . $Login_idLogin . "");
+
+	if (!$result_login) {
+		throw new Exception('Could not execute Login query');
+	}
+
+	// Customer variables
+	$password_login;
+
+	if ($result_login->num_rows>0) {
+		while ($row = $result_login->fetch_assoc()) {
+			unset($password_login);
+			$password_login  = $row['password'];
+		}
+	}
+
+	/*********************************************************************************/
 	/********************************** CUSTUMOR DB **********************************/
 	/*********************************************************************************/
 
@@ -62,30 +83,6 @@
 	$dateFormated = date('d-m-Y', strtotime($dateOfBirthday));
 
 	/*********************************************************************************/
-	/******************************** NATIONALITY DB *********************************/
-	/*********************************************************************************/
-
-
-	// check for Nationality data in Nationality DB
-	$result_Nationality = $conn->query("select * from Nationality where id = " . $Nationality_id . "");
-
-	if (!$result_Nationality) {
-		throw new Exception('Could not execute Nationality query');
-	}
-
-	// Nationality variables
-	$nationality;
-	$idNationality;
-
-	if ($result_Nationality->num_rows>0) {
-		while ($row = $result_Nationality->fetch_assoc()) {
-			unset($idNationality, $nationality);
-			$idNationality = $row['id'];
-		    $nationality   = $row['nationality'];
-		}
-	}
-
-	/*********************************************************************************/
 	/********************************** ADDRESS DB ***********************************/
 	/*********************************************************************************/
 
@@ -112,6 +109,50 @@
 			$postalCode    = $row['postalCode'];
 			$City_id       = $row['City_id'];
 			$Country_id    = $row['Country_id'];
+		}
+	}
+
+	/*********************************************************************************/
+	/********************************** COURSE DB ************************************/
+	/*********************************************************************************/
+
+
+	// check for Customer course are in Course DB
+	$result_CourseArea = $conn->query("select CourseArea_id from Course where id = " . $course . "");
+
+	if (!$result_CourseArea) {
+		throw new Exception('Could not execute Course query');
+	}
+
+	// Address variables
+	$CourseArea_id;
+
+	if ($result_CourseArea->num_rows>0) {
+		while ($row = $result_CourseArea->fetch_assoc()) {
+			unset($CourseArea_id);
+			$CourseArea_id  = $row['CourseArea_id'];
+		}
+	}
+
+	/*********************************************************************************/
+	/************************* EDUCATIONALESTABLISHMENT DB ***************************/
+	/*********************************************************************************/
+
+
+	// check for Customer country of educational establishment are in EducationalEstablishment DB
+	$result_EducationalEstablishment = $conn->query("select Country_id from EducationalEstablishment where id = " . $EducationalEstablishment . "");
+
+	if (!$result_EducationalEstablishment) {
+		throw new Exception('Could not execute Educational Establishment query');
+	}
+
+	// Address variables
+	$Country_id_EducationalEstablishment;
+
+	if ($result_EducationalEstablishment->num_rows>0) {
+		while ($row = $result_EducationalEstablishment->fetch_assoc()) {
+			unset($Country_id_EducationalEstablishment);
+			$Country_id_EducationalEstablishment  = $row['Country_id'];
 		}
 	}
 ?>
@@ -148,7 +189,7 @@
           <div class="collapse navbar-collapse navbar-dash">
             <ul class="nav navbar-nav mr0">
               <li class="active">
-                <a href="#"><i aria-hidden="true"></i> <?php echo  "Welcome: " . $login_session; ?></a>
+                <a href="listings_EN.php"><i aria-hidden="true"></i> <?php echo  "Welcome: " . $login_session; ?></a>
               </li>
               <li><a href="#"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a></li>
               <li class="dropdown singleDrop">
@@ -269,7 +310,7 @@
               										unset($id, $name);
 								                	$id = $row['id'];
 								                	$name = $row['nationality']; 
-								                	if ($idNationality == $id) {
+								                	if ($Nationality_id == $id) {
 								                		echo '<option value="'.$id.'" selected>'.$name.'</option>';
 								                	} else {
 								                		echo '<option value="'.$id.'">'.$name.'</option>';
@@ -392,7 +433,11 @@
               										unset($id, $name);
 								                	$id = $row['id'];
 								                	$name = $row['countryEN']; 
-								                	echo '<option value="'.$id.'">'.$name.'</option>';
+								                	if ($Country_id_EducationalEstablishment == $id) {
+								                		echo '<option value="'.$id.'" selected>'.$name.'</option>';
+								                	} else {
+								                		echo '<option value="'.$id.'">'.$name.'</option>';
+								                	}
 												}
 
 											?>
@@ -413,7 +458,11 @@
                   									unset($id, $name);
 									                $id = $row['id'];
 									                $name = $row['name']; 
-									                echo '<option value="'.$id.'">'.$name.'</option>';
+									                if ($EducationalEstablishment == $id) {
+								                		echo '<option value="'.$id.'" selected>'.$name.'</option>';
+								                	} else {
+								                		echo '<option value="'.$id.'">'.$name.'</option>';
+								                	}
 												}
 
 											?>
@@ -435,7 +484,11 @@
                   									unset($id, $name);
 									                $id = $row['id'];
 									                $name = $row['name']; 
-									                echo '<option value="'.$id.'">'.$name.'</option>';
+									                if ($CourseArea_id == $id) {
+								                		echo '<option value="'.$id.'" selected>'.$name.'</option>';
+								                	} else {
+								                		echo '<option value="'.$id.'">'.$name.'</option>';
+								                	}
 												}
 
 											?>
@@ -480,6 +533,11 @@
 									                $id = $row['id'];
 									                $name = $row['name']; 
 									                echo '<option value="'.$id.'">'.$name.'</option>';
+									                if ($course == $id) {
+								                		echo '<option value="'.$id.'" selected>'.$name.'</option>';
+								                	} else {
+								                		echo '<option value="'.$id.'">'.$name.'</option>';
+								                	}
 												}
 
 											?>
@@ -488,8 +546,8 @@
 									</div>
 								</div>
 								<div id="studentNumber" class="form-group col-xs-6">
-									<label for="studentNumber" class="control-label">Student Numbber</label>
-									<input type="text" class="form-control" id="studentNumber" name="studentNumber">
+									<label for="studentNumber" class="control-label">Student Number</label>
+									<input type="text" class="form-control" id="studentNumber" name="studentNumber" placeholder="<?php echo  $studentNumber ?>" value="<?php echo  $studentNumber ?>">
 								</div>
 							</div>
 						</div>
@@ -504,7 +562,7 @@
 							<div class="row">
 								<div class="form-group col-xs-12">
 									<label for="currentPassword">Current Password</label>
-									<input type="password" class="form-control" id="currentPassword" placeholder="********">
+									<input type="password" class="form-control" id="currentPassword" name="currentPassword" value="<?php echo  $password_login ?>">
 								</div>
 								<div class="form-group col-xs-12">
 									<label for="newPassword">New Password</label>

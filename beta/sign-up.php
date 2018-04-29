@@ -151,7 +151,7 @@
 								<h3>Informações de morada</h3>
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
-										<label for="country" class="control-label">Country</label>
+										<label for="country" class="control-label">País</label>
 										<div class="contactSelect scrollable">
 											<select name="country" id="country" class="select-drop">
 

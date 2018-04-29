@@ -314,7 +314,7 @@
 										</div>
 									</div>
 									<div id="studentNumber" class="form-group col-xs-6">
-										<label for="studentNumber" class="control-label">Student Numbber</label>
+										<label for="studentNumber" class="control-label">Student Number</label>
 										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
 									</div>
 								</div>
