@@ -195,7 +195,7 @@
               <li class="dropdown singleDrop">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Rents <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu dropdown-menu-left">
-                  <li><a href="#">My rents</a></li>
+                  <li><a href="listings_EN.php">My rents</a></li>
                   <li><a href="add-listings_EN.php">Add a rent</a></li>
                   <li><a href="#">Edit my rents</a></li>
                 </ul>
