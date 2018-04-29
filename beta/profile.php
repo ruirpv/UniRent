@@ -6,7 +6,7 @@
 	include('db/session.php');
 
 	// print UniRent header
-	do_unirent_header('Profile | UniRent');
+	do_unirent_header('Meu Perfil');
 
 	// connect to UniRent DB
 	$conn = db_connect();
@@ -191,7 +191,7 @@
               <li class="active">
                 <a href="listings.php"><i aria-hidden="true"></i> <?php echo  "Bem vindo: " . $login_session; ?></a>
               </li>
-              <li><a href="#"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a></li>
+              <li><a href="dashboard.php"><i class="fa fa-tachometer icon-dash" aria-hidden="true"></i> Dashboard</a></li>
               <li class="dropdown singleDrop">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul icon-dash" aria-hidden="true"></i> Aluguéis <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                 <ul class="dropdown-menu dropdown-menu-left">
@@ -201,7 +201,7 @@
                 </ul>
               </li>
               <li class="dropdown singleDrop">
-                <a href="#" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Alugados</a>
+                <a href="orders.php" class="scrolling"><i class="fa fa-star-o" aria-hidden="true"></i> Alugados</a>
               </li>
             </ul>
             <div class="row adjustRow">
@@ -229,7 +229,7 @@
       <div class="col-xs-12">
         <h2>Meu Perfil</h2>
         <ol class="breadcrumb">
-          <li><a href="listings.php">Home</a></li>
+          <li><a href="listings.php">Início</a></li>
           <li class="active">Minha conta</li>
         </ol>
       </div>
