@@ -6,7 +6,7 @@
 	include('db/session.php');
 
 	// print UniRent header
-	do_unirent_header('Dashboard | UniRent');
+	do_unirent_header('Profile | UniRent');
 
 	// connect to UniRent DB
 	$conn = db_connect();
