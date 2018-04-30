@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 
 <?php
-  require_once('php/header_listings.php');
-  //require_once('db/unirent_functions.php');
-  include('db/session.php');
+	require_once('php/header_listings.php');
+	require_once('db/unirent_functions.php');
+	include('db/session.php');
 
-  // print UniRent header
-  do_unirent_header('Alugados');
+	// print UniRent header
+	do_unirent_header('Alugados');
 
-  // connect to UniRent DB
-  //$conn = db_connect();
+	// connect to UniRent DB
+	$conn = db_connect();
+
+	// Retrieve Login ID 
+	$Login_idLogin = retrieve_Login($login_session);
+
+	/*********************************************************************************/
+	/********************************** CUSTUMOR DB **********************************/
+	/*********************************************************************************/
+
+	// check for Customer data in Customer DB
+	$result = $conn->query("select id, name, surname from Customer where Login_idLogin = " . $Login_idLogin . "");
+
+	if (!$result) {
+		throw new Exception('Could not execute Customer query');
+	}
+
+	// Customer variables
+	$idCustomer;
+	$firstName;
+	$surname;
+
+	if ($result->num_rows>0) {
+		while ($row = $result->fetch_assoc()) {
+			unset($idCustomer, $firstName, $surname);
+		    $idCustomer = $row['id'];
+		    $firstName  = $row['name'];
+			$surname	= $row['surname'];
+		}
+	}
+
+	/*********************************************************************************/
+	/********************************** RENTAL DB ************************************/
+	/*********************************************************************************/
+
+
+	// check for Customer rentals in Rental DB
+	$result_Rental = $conn->query("select * from Rental where Customer_id = " . $idCustomer . "");
+
+	if (!$result_Rental) {
+		throw new Exception('Could not execute Rental query');
+	}
+
+	// Rentals variables
+	$Item_id;
+	$initialRentalDay;
+	$endRentalDay;
+	$totalPrice;
+
+	if ($result_Rental->num_rows>0) {
+		while ($row = $result_Rental->fetch_assoc()) {
+			unset($Item_id, $initialRentalDay, $endRentalDay, $totalPrice);
+		    $Item_id  		  = $row['Item_id'];
+			$initialRentalDay = $row['initialRentalDay'];
+			$endRentalDay     = $row['endRentalDay'];
+			$totalPrice       = number_format($row['totalPrice'], 2, '.', '');
+		}
+	}
+
+	$idT = !empty($Item_id) ? $Item_id : "";
 ?>
 
     <!-- Dashboard header -->
@@ -88,23 +146,24 @@
 					<div class="dashboardBoxBg mb30">
 						<div class="profileIntro">
 							<div class="row">
+							<form action="" method="" class="listing__form">
 								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="orderId">Order ID</label>
-									<input type="text" class="form-control" id="orderId" placeholder="Order ID">
+									<label for="itemName">Nome do item</label>
+									<input type="text" class="form-control" id="itemName" name="itemName" placeholder="Nome do item">
 								</div>
 								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="orderStatus">Order Status</label>
-									<input type="text" class="form-control" id="orderStatus" placeholder="Order Status">
+									<label for="ownerUsername">Username do owner do item</label>
+									<input type="text" class="form-control" id="ownerUsername" name="ownerUsername" placeholder="Username do owner">
 								</div>
 								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="customer">Customer</label>
-									<input type="text" class="form-control" id="customer" placeholder="Customer">
+									<label for="totalPrice">Preço total</label>
+									<input type="text" class="form-control" id="totalPrice" name="totalPrice" placeholder="€">
 								</div>
 								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="dateAdded">Date Added</label>
+									<label for="initialRentalDay">Data inicial do aluguer</label>
 									<div class="dateSelect">
 										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-											<input type="text" class="form-control" placeholder="mm/dd/yyyy">
+											<input type="text" class="form-control" id="initialRentalDay" name="initialRentalDay" placeholder="mm/dd/yyyy">
 											<div class="input-group-addon">
 												<i class="icon-listy icon-calendar"></i>
 											</div>
@@ -112,10 +171,10 @@
 									</div>
 								</div>
 								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="dateModified">Date Modified</label>
+									<label for="endRentalDay">Data final do aluguer</label>
 									<div class="dateSelect">
 										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-											<input type="text" class="form-control" placeholder="mm/dd/yyyy">
+											<input type="text" class="form-control" id="endRentalDay" name="endRentalDay" placeholder="mm/dd/yyyy">
 											<div class="input-group-addon">
 												<i class="icon-listy icon-calendar"></i>
 											</div>
@@ -123,9 +182,20 @@
 									</div>
 								</div>
 								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="amount">Amount</label>
-									<input type="text" class="form-control" id="amount" placeholder="Amount">
+									<label for="publishDate">Data de publicação do item</label>
+									<div class="dateSelect">
+										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+											<input type="text" class="form-control" id="publishDate" name="publishDate" placeholder="mm/dd/yyyy">
+											<div class="input-group-addon">
+												<i class="icon-listy icon-calendar"></i>
+											</div>
+										</div>
+									</div>
 								</div>
+								<div class="form-footer text-center">
+									<button type="submit" id="submit" name="submit" class="btn-submit">Pesquisar</button>
+								</div>
+							</form>
 							</div>
 						</div>
 					</div>
@@ -135,476 +205,57 @@
 					<table id="ordersTable" class="table table-small-font table-bordered table-striped" cellspacing="0" width="100%">
 						<thead>
 							<tr>
-								<th>Order ID</th>
-								<th data-priority="">Customer</th>
-								<th data-priority="2">Amount</th>
-								<th data-priority="6">Date Added</th>
-								<th data-priority="6">Date Modified</th>
-								<th data-priority="3">Status</th>
-								<th data-priority="2">Action</th>
+								<th data-priority="0">ID do item</th>
+								<th data-priority="1">Nome do item</th>
+								<th data-priority="2">Preço total do aluguer</th>
+								<th data-priority="3">Data inicial do aluguer</th>
+								<th data-priority="4">Data final do aluguer</th>
+								<th data-priority="5">Status</th>
+								<th data-priority="6">Ações</th>
 							</tr>
 						</thead>
 						<tfoot>
 							<tr>
-								<th>Order ID</th>
-								<th>Customer</th>
-								<th>Amount</th>
-								<th>Date Added</th>
-								<th>Date Modified</th>
+								<th>ID do item</th>
+								<th>Nome do item</th>
+								<th>Preço total do aluguer</th>
+								<th>Data inicial do aluguer</th>
+								<th>Data final do aluguer</th>
 								<th>Status</th>
-								<th>Action</th>
+								<th>Ações</th>
 							</tr>
 						</tfoot>
 						<tbody>
 							<tr>
-								<td>2475</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2475</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2470</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2471</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2472</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2465</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2474</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2461</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2463</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2468</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2466</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2457</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2354</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2648</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2145</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2874</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2963</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2854</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2654</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2185</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2598</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2176</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2211</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2323</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2636</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2525</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2727</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2929</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-danger">Canceled</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2424</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-success">Active</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">Edit</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2531</td>
-								<td>Tiger Nixon</td>
-								<td>$700</td>
-								<td>12/12/2017</td>
-								<td>15/12/2017</td>
-								<td><span class="label label-warning">Pending</span></td>
-								<td>
-									<div class="btn-group">
-										<button type="button" class="btn btn-primary">View</button>
-										<button type="button" class="btn btn-primary">approve</button>
-										<button type="button" class="btn btn-primary">Delete</button>
-									</div>
-								</td>
+								<?php
+
+									$result_CheckItem = $conn->query("select id, name from Item where Customer_id = " . $idCustomer . "");
+
+									while ($row = $result_CheckItem->fetch_assoc()) {
+	  									unset($id, $name);
+						                $id = $row['id'];
+						                $name = $row['name']; 
+						                echo "<td>$id</td>";
+						                echo "<td>$name</td>";
+						                echo "<td>€ $totalPrice</td>";
+						                echo "<td>$initialRentalDay</td>";
+						                echo "<td>$endRentalDay</td>";
+						                if(date('Y-m-d') < date('Y-m-d', strtotime($endRentalDay))){
+											echo "<td><span class='label label-success'>Em curso</span></td>";
+										} else if(date('Y-m-d') > date('Y-m-d', strtotime($endRentalDay))){
+											echo "<td><span class='label label-danger'>Finalisado</span></td>";
+										}
+						                //echo "<td><span class='label label-warning'>Pending</span></td>";
+						                echo "<td>";
+						                	echo "<div class='btn-group'>";
+						                	echo "<button type='button' class='btn btn-primary'>View</button>";
+						                	echo "<button type='button' class='btn btn-primary'>Return</button>";
+						                	echo "<button type='button' class='btn btn-primary'>Cancel</button>";
+						                	echo "</div>";
+						                echo "</td>";
+									}
+
+								?>
 							</tr>
 						</tbody>
 					</table>
