@@ -30,6 +30,7 @@
                   <li><a href="contact-us_EN.php">Contact Us</a></li>
                   <li><a href="terms-of-services_EN.php">Terms and Conditions</a></li>
                   <li><a href="how-it-works_EN.php">How It Works</a></li>
+                  <li><a href="pricing-table_EN.php">Assurance</a></li>
                 </ul>
               </div>
             </div>
@@ -53,7 +54,7 @@
                   </div>
                   <div class="col-sm-7 col-sm-pull-5 col-xs-12">
                     <div class="copyRightText">
-                      <p>Copyright &copy; 2017. All Rights Reserved by <a href="index_EN.php">UniRent</a></p>
+                      <p>Copyright &copy; 2018. All Rights Reserved by <a href="index_EN.php">UniRent</a></p>
                     </div>
                   </div>
                 </div>

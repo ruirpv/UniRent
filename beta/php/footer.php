@@ -1,9 +1,9 @@
 <?php
-	function do_unirent_footer() {
-	// print UniRent footer
+  function do_unirent_footer() {
+  // print UniRent footer
 ?>
 
-	<!-- FOOTER -->
+  <!-- FOOTER -->
     <footer style="background-image: url(img/banner/4.png);">
       <!-- FOOTER INFO -->
       <div class="clearfix footerInfo">
@@ -11,11 +11,11 @@
           <div class="row">
             <div class="col-sm-7 col-xs-12">
               <div class="footerText">
-                <p>The student's renting marketplace</p>
+                <p>O mercado de aluguer para estudantes</p>
                 <ul class="list-styled list-contact">
                   <li><i class="fa fa-phone" aria-hidden="true"></i>[+351] 657 524 332</li>
                   <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:contacto@unirent.online?Subject=Contact%20UniRent" target="_top">contacto@unirent.online</a></li>
-                  <li><i class="fa fa-globe" aria-hidden="true"></i><a href="index_EN.php">Change language to <u>English</u></a></li>
+                  <li><i class="fa fa-globe" aria-hidden="true"></i><a href="index_EN.php">Alterar idioma para o <u>Inglês</u></a></li>
                 </ul>
               </div>
             </div>
@@ -23,13 +23,14 @@
             </div>
             <div class="col-sm-2 col-xs-12">
               <div class="footerInfoTitle">
-                <h4>Company</h4>
+                <h4>Companhia</h4>
               </div>
               <div class="useLink">
                 <ul class="list-unstyled">
-                  <li><a href="contact-us.php">Contact Us</a></li>
-                  <li><a href="terms-of-services.php">Terms and Conditions</a></li>
-                  <li><a href="how-it-works.php">How It Works</a></li>
+                  <li><a href="contact-us.php">Contactos</a></li>
+                  <li><a href="terms-of-services.php">Termos e Condições</a></li>
+                  <li><a href="how-it-works.php">Como Funciona</a></li>
+                  <li><a href="pricing-table.php">Seguro</a></li>
                 </ul>
               </div>
             </div>
@@ -53,7 +54,7 @@
                   </div>
                   <div class="col-sm-7 col-sm-pull-5 col-xs-12">
                     <div class="copyRightText">
-                      <p>Copyright &copy; 2017. All Rights Reserved by <a href="index.php">UniRent</a></p>
+                      <p>Copyright &copy; 2018. Todos os direitos reservados a <a href="index.php">UniRent</a></p>
                     </div>
                   </div>
                 </div>
@@ -74,7 +75,7 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Log In to your Account</h4>
+          <h4 class="modal-title">Faz Login na tua conta</h4>
         </div>
         <div class="modal-body">
           <form class="loginForm">
@@ -87,17 +88,17 @@
               <input type="password" class="form-control" id="pwd" placeholder="Password">
             </div>
             <div class="form-group">
-              <button type="submit" class="btn btn-primary btn-block">Log In</button>
+              <button type="submit" class="btn btn-primary btn-block">Login</button>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox"> Remember me</label>
-              <a href="#" class="pull-right link">Fogot Password?</a>
+              <label><input type="checkbox"> Recordar a minha conta </label>
+              <a href="#" class="pull-right link">Esqueceste-te da tua Password?</a>
             </div>
 
           </form>
         </div>
         <div class="modal-footer">
-          <p>Don't have an Account? <a href="sign-up.php" class="link">Sign up</a></p>
+          <p>Não tens conta? <a href="sign-up.php" class="link">Sign up</a></p>
         </div>
       </div>
     </div>
@@ -130,5 +131,5 @@
 </html>
 
 <?php
-	};
+  };
 ?>

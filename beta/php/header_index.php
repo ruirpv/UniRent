@@ -91,14 +91,15 @@
               <ul class="nav navbar-nav navbar-right">
                 </li>
                 <li class=" dropdown singleDrop">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Help <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ajuda <i class="fa fa-angle-down" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu dropdown-menu-left">
-                      <li><a href="contact-us.php">Contact Us</a></li>
-                      <li><a href="terms-of-services.php">Terms and Conditions</a></li>
-                      <li><a href="how-it-works.php">How It Works</a></li>
+                      <li><a href="contact-us.php">Contactos</a></li>
+                      <li><a href="terms-of-services.php">Termos e Condições</a></li>
+                      <li><a href="how-it-works.php">Como Funciona</a></li>
+                      <li><a href="pricing-table.php">Seguro</a></li>
                   </ul>
                 </li>
-                <li class=""><a href="login.php">login </a></li>
+                <li class=""><a href="login.php">Login </a></li>
               </ul>
             </div>
             <a class="btn btn-default navbar-btn" href="sign-up.php"> + <span>Sign Up</span></a>

@@ -60,7 +60,7 @@
 										<label for="selectSome" class="control-label">Escolhe o tipo de pedido*</label>
 										<div class="contactSelect">
 											<select name="guiest_id8" id="guiest_id8" class="select-drop">
-												<option value="0">-- Select Subject --</option>
+												<option value="0">-- Selecione o assunto --</option>
 												<option value="1">Quero alugar um bem</option>
 												<option value="2">Quero rentabilizar um bem</option>           
 											</select>

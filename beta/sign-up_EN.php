@@ -14,12 +14,14 @@
 
 <style type="text/css">
  .scrollable{
-   overflow: auto;
-   width: 270px; /* adjust this width depending to amount of text to display */
-   height: 120px; /* adjust height depending on number of options to display */
+    overflow: auto;
+    position: absolute;
+    width: 360px; /* adjust this width depending to amount of text to display */
+	height: 370px; /* adjust height depending on number of options to display */
  }
- .scrollable select{
-   border: none;
+ 
+ .hide {
+ 	display: none;
  }
 </style>
 
@@ -94,6 +96,38 @@
 											</div>
 										</div>
 									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<label for="nationality" class="control-label">Nationality*</label>
+										<div class="contactSelect scrollable">
+											<select name="nationality" id="nationality" class="select-drop">
+
+												<?php
+
+													$result_nationality = $conn->query("select id, nationality from Nationality");
+
+													while ($row = $result_nationality->fetch_assoc()) {
+                  										unset($id, $name);
+									                	$id = $row['id'];
+									                	$name = $row['nationality']; 
+									                	echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
+											</select>
+										</div>
+									</div>
+									<div class="form-group col-sm-6 col-xs-12">
+										<br><br>
+										<label for="gender" class="control-label">Gender</label>
+										<div class="contactSelect">
+											<select name="gender" id="gender" class="select-drop">
+												<option value="0">Male</option>
+												<option value="1">Female</option>
+												<option value="2">No specified</option>           
+											</select>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="formSection">
@@ -118,7 +152,7 @@
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="country" class="control-label">Country</label>
-										<div class="contactSelect">
+										<div class="contactSelect scrollable">
 											<select name="country" id="country" class="select-drop">
 
 												<?php
@@ -139,7 +173,7 @@
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="city" class="control-label">City</label>
-										<div class="contactSelect">
+										<div class="contactSelect scrollable">
 											<select name="city" id="city" class="select-drop">
 												
 												<?php
@@ -159,6 +193,7 @@
 										</div>
 									</div>
 									<div class="form-group col-xs-12">
+										<br><br>
 										<label for="addressLine1" class="control-label">Address Line 1*</label>
 										<input type="text" class="form-control" id="addressLine1" name="addressLine1">
 									</div>
@@ -173,31 +208,117 @@
 								</div>
 							</div>
 							<div class="formSection">
-								<h3>More Information</h3>
+								<h3>Student Information</h3>
 								<div class="row">
-									<div class="form-group col-sm-6 col-xs-12">
-										<label for="nationality" class="control-label">Nationality*</label>
-										<input type="text" class="form-control" id="nationality" name="nationality">
+									<div class="form-group col-xs-12">
+										<label for="isStudent" class="control-label">Are you a student?*</label>
+										<input type="radio" name="isStudent" value="isStudent" onclick="hideStudentFields();" />
+										No 
+										<input type="radio" name="isStudent" value="isStudent" onclick="showStudentFields();" />
+										Yes
 									</div>
-									<div class="form-group col-sm-6 col-xs-12">
-										<label for="gender" class="control-label">Gender</label>
-										<div class="contactSelect">
-											<select name="gender" id="gender" class="select-drop">
-												<option value="0">Male</option>
-												<option value="1">Female</option>
-												<option value="2">No specified</option>           
+									<div id="countryOfStudy" class="form-group col-sm-6 col-xs-12">
+										<label for="countryOfStudy" class="control-label">Country of Study*</label>
+										<div class="contactSelect scrollable">
+											<select name="countryOfStudy" id="countryOfStudy" class="select-drop">
+
+												<?php
+
+													$result_StudyCountry = $conn->query("select id, countryEN from Country");
+
+													while ($row = $result_StudyCountry->fetch_assoc()) {
+                  										unset($id, $name);
+									                	$id = $row['id'];
+									                	$name = $row['countryEN']; 
+									                	echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
 											</select>
 										</div>
 									</div>
-									<div class="form-group col-xs-12">
+									<div id="EducationalEstablishment" class="form-group col-sm-6 col-xs-12">
+										<label for="EducationalEstablishment" class="control-label">Educational Establishment*</label>
+										<div class="contactSelect scrollable">
+											<select name="EducationalEstablishment" id="EducationalEstablishment" class="select-drop">
+												
+												<?php
+
+													$result_Educational = $conn->query("select id, name from EducationalEstablishment");
+
+													while ($row = $result_Educational->fetch_assoc()) {
+	                  									unset($id, $name);
+										                $id = $row['id'];
+										                $name = $row['name']; 
+										                echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
+											</select>
+										</div>
+									</div>
+									<div id="courseArea" class="form-group col-sm-6 col-xs-12">
+										<br><br>
+										<label for="courseArea" class="control-label">Course area*</label>
+										<div class="contactSelect scrollable">
+											<select name="courseArea" id="courseArea" class="select-drop">
+												
+												<?php
+
+													$result_courseArea = $conn->query("select id, name from CourseArea where language = 'EN'");
+
+													while ($row = $result_courseArea->fetch_assoc()) {
+	                  									unset($id, $name);
+										                $id = $row['id'];
+										                $name = $row['name']; 
+										                echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
+											</select>
+										</div>
+									</div>
+									<div id="studentDegree" class="form-group col-sm-6 col-xs-12">
+										<br><br>
+										<label for="studentDegree" class="control-label">Student Degree*</label>
+										<div class="contactSelect">
+											<select name="studentDegree" id="studentDegree" class="select-drop">
+												<option value="Bachelor">Bachelor</option>
+												<option value="Master">Master</option>
+												<option value="Other">Other</option>           
+											</select>
+										</div>
+									</div>
+									<div id="course" class="form-group col-sm-6 col-xs-12">
+										<label for="course" class="control-label">Course*</label>
+										<div class="contactSelect scrollable">
+											<select name="course" id="course" class="select-drop">
+												
+												<?php
+
+													$result_course = $conn->query("select id, name from Course where language = 'EN'");
+
+													while ($row = $result_course->fetch_assoc()) {
+	                  									unset($id, $name);
+										                $id = $row['id'];
+										                $name = $row['name']; 
+										                echo '<option value="'.$id.'">'.$name.'</option>';
+													}
+
+												?>
+
+											</select>
+										</div>
+									</div>
+									<div id="studentNumber" class="form-group col-xs-6">
 										<label for="studentNumber" class="control-label">Student Number</label>
 										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
 									</div>
-									<div class="form-group col-xs-12">
-										<label for="studentDegree" class="control-label">Student Degree</label>
-										<input type="text" class="form-control" id="studentDegree" name="studentDegree">
-									</div>
 								</div>
+							</div>
 							</div>
 							<div class="formSection">
 								<h3>Security Control</h3>
@@ -210,7 +331,8 @@
 										</div>
 									</div>
 									<div class="form-group col-xs-12 mb0">
-										<button type="submit" name="submit" class="btn btn-primary">Create Account</button>
+										<input type="hidden" name="pageName" value="loginEN"/>
+										<button type="submit" name="submit_EN" class="btn btn-primary">Create Account</button>
 									</div>
 								</div>
 							</div>
@@ -235,6 +357,28 @@
 		</div>
 	</div>
 </section>
+
+
+<script type="text/javascript">
+    function hideStudentFields(){
+    	document.getElementById('countryOfStudy').style.display = 'none';
+    	document.getElementById('EducationalEstablishment').style.display = 'none';
+    	document.getElementById('courseArea').style.display = 'none';
+    	document.getElementById('course').style.display = 'none';
+  		document.getElementById('studentNumber').style.display = 'none';
+  		document.getElementById('studentDegree').style.display = 'none';
+	}
+
+	function showStudentFields(){
+		document.getElementById('countryOfStudy').style.display ='block';
+		document.getElementById('EducationalEstablishment').style.display ='block';
+		document.getElementById('courseArea').style.display ='block';
+		document.getElementById('course').style.display ='block';
+		document.getElementById('studentNumber').style.display ='block';
+		document.getElementById('studentDegree').style.display ='block';
+ 
+	}
+</script>
 
 
 <?php

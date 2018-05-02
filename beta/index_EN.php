@@ -42,9 +42,9 @@
   <div class="container">
     <div class="page-header text-center">
       <h1>How it Works?</h1><br>
-        <h2>UniRent is an innovative service for students like you who need an item just for a short period of time. It's safe and practical, and lets you browse thousands of items available to rent and match your needs.<br>
+        <h3>UniRent is an innovative service for students like you who need an item just for a short period of time. It's safe and practical, and lets you browse thousands of items available to rent and match your needs.<br><br>
         <small>We give you a simple solution divided in 4 <b>easy</b> steps</small>
-      </h2>
+      </h3>
     </div>
     <div class="row">
       <div class="col-sm-3 col-xs-10">
