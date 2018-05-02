@@ -27,102 +27,55 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12">
 				<div class="pricingIntro">
-					<p>Choose your loving plan from below. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusmod tempor incididunt  labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+					<p>We offer you the option to add an assurance to each rental you make, that way you won't have to worry about any security deposit or statement of responsability to cover any eventuality that happens with the good you are renting.</p>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4 col-xs-12">
+			<div class="col-sm-6 col-xs-12">
 				<div class="priceTableWrapper">
 					<div class="priceTableTitle">
-						<h2>Free <small>Need Free Support</small></h2>
+						<h2>Without Assurance</h2><p></p>
 					</div>
 					<div class="priceAmount">
-						<h2>0<small>USD/Year</small></h2>
+						<h2>0<small>€</small></h2>
 					</div>
 					<div class="priceInfo">
 						<ul class="priceShorting">
-							<li class="active"><i class="fa fa-check-square"></i><p>Highlighted listing</p></li>
-							<li><i class="fa fa-check-square"></i><p>Top listing placement on:</p>
+							<li><i class="fa fa-check-square"></i><p>UniRent doesn't take responsability</p></li>
+							<li><i class="fa fa-check-square"></i><p>Bond to <u>Owner's</u> Conditions:</p>
 								<ul>
-									<li><i class="fa fa-check-square"></i>Search results</li>
-									<li><i class="fa fa-check-square"></i>Selected categories</li>
-									<li><i class="fa fa-check-square"></i>Added keywords</li>
+									<li><i class="fa fa-check-square"></i>Security Deposit</li>
+									<li><i class="fa fa-check-square"></i>Statement of Responsability</li>
 								</ul>
 							</li>
 						</ul>
-						<ul class="list-unstyled">
-							<li>6 Products</li>
-							<li>8 Photos</li>
-							<li>5 Keywords</li>
-							<li>6 Categories</li>
-						</ul>
 						<div class="priceBtn">
-							<a href="sign-up_EN.php" class="btn btn-primary">Get Started</a>
+							<a href="sign-up_EN.php" class="btn btn-primary">Start Now</a>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-4 col-xs-12">
+			<div class="col-sm-6 col-xs-12">
 				<div class="priceTableWrapper advancedSupport active">
 					<div class="priceTableTitle">
-						<h2>Premium <small>Need Premium Support</small></h2>
+						<h2>With Assurance<small>Without Concerns</small></h2>
 					</div>
 					<div class="priceAmount">
-						<h2>199<small>USD/Year</small></h2>
+						<h2>Variable<sup>*</sup></h2>
 					</div>
 					<div class="priceInfo">
 						<ul class="priceShorting">
-							<li class="active"><i class="fa fa-check-square"></i><p>Highlighted listing</p></li>
-							<li class="active"><i class="fa fa-check-square"></i><p>Top listing placement on:</p>
+							<li class="active"><i class="fa fa-check-square"></i><p>UniRent covers any and all damages</p></li>
+							<li class="active"><i class="fa fa-check-square"></i><p>The <u>Owner's</u> Conditions have no effect:</p>
 								<ul>
-									<li class="active"><i class="fa fa-check-square"></i>Search results</li>
-									<li><i class="fa fa-check-square"></i>Selected categories</li>
-									<li><i class="fa fa-check-square"></i>Added keywords</li>
+									<li class="active"><i class="fa fa-check-square"></i>Without Security Deposit</li>
+									<li class="active"><i class="fa fa-check-square"></i>Without Statement of Responsability</li>
 								</ul>
 							</li>
 						</ul>
-						<p>Below Lifetime <a href="#">Preview</a></p>
-						<ul class="list-unstyled">
-							<li>25 Products</li>
-							<li>20 Photos</li>
-							<li>10 Keywords</li>
-							<li>10 Categories</li>
-						</ul>
 						<div class="priceBtn">
-							<a href="sign-up_EN.php" class="btn btn-primary">Get Started</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-4 col-xs-12">
-				<div class="priceTableWrapper advancedSupport">
-					<div class="priceTableTitle">
-						<h2>Lifetime <small>Need Lifetime Support</small></h2>
-					</div>
-					<div class="priceAmount">
-						<h2>299<small>USD/Year</small></h2>
-					</div>
-					<div class="priceInfo">
-						<ul class="priceShorting">
-							<li class="active"><i class="fa fa-check-square"></i><p>Highlighted listing</p></li>
-							<li class="active"><i class="fa fa-check-square"></i><p>Top listing placement on:</p>
-								<ul>
-									<li class="active"><i class="fa fa-check-square"></i>Search results</li>
-									<li class="active"><i class="fa fa-check-square"></i>Selected categories</li>
-									<li class="active"><i class="fa fa-check-square"></i>Added keywords</li>
-								</ul>
-							</li>
-						</ul>
-						<p>Above Premium <a href="#">Preview</a></p>
-						<ul class="list-unstyled">
-							<li>30 Products</li>
-							<li>25 Photos</li>
-							<li>15 Keywords</li>
-							<li>10 Categories</li>
-						</ul>
-						<div class="priceBtn">
-							<a href="sign-up_EN.php" class="btn btn-primary">Get Started</a>
+							<a href="sign-up_EN.php" class="btn btn-primary">Rent with no Fears!</a>
 						</div>
 					</div>
 				</div>

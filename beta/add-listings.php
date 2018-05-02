@@ -182,12 +182,12 @@
 					</div>
 					<div class="dashboardBoxBg mb30">
 						<div class="profileIntro paraMargin">
-							<h3>Duração do aluguer</h3>
+							<h3>Disponibilidade do Bem</h3>
 							<div class="row">
 								<div class="dateSelect col-sm-6 col-xs-12">
                   				<label for="initialRentalDay" class="control-label">Data de Início</label>
                   					<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-                    				<input maxlength="10" type="text" class="form-control" id="initialRentalDay" name="initialRentalDay" placeholder="mm/dd/yyyy">
+                    				<input maxlength="10" type="text" class="form-control" id="initialAvailableDay" name="initialRentalDay" placeholder="mm/dd/yyyy">
                     					<div class="input-group-addon">
                       					<i class="fa fa-calendar" aria-hidden="true"></i>
                     					</div>
@@ -196,7 +196,7 @@
                 			<div class="dateSelect col-sm-6 col-xs-12">
                   				<label for="endRentalDay" class="control-label">Data de Fim</label>
                   					<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-                    				<input maxlength="10" type="text" class="form-control" id="endRentalDay" name="endRentalDay" placeholder="mm/dd/yyyy">
+                    				<input maxlength="10" type="text" class="form-control" id="endAvailableDay" name="endRentalDay" placeholder="mm/dd/yyyy">
                     					<div class="input-group-addon">
                       					<i class="fa fa-calendar" aria-hidden="true"></i>
                     					</div>
