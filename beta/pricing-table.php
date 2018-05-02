@@ -4,7 +4,7 @@
   require_once('php/header.php');
   
   // print UniRent header
-  do_unirent_header('Assurance - UniRent');
+  do_unirent_header('Seguro - UniRent');
 ?>
 
 
