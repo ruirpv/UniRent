@@ -6,7 +6,7 @@
   include('db/session.php');
 
   // print UniRent header
-  do_unirent_header('Meus aluguéis');
+  do_unirent_header('Os Meus Alugueres');
 
   // connect to UniRent DB
   //$conn = db_connect();

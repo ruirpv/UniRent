@@ -275,24 +275,24 @@
 							<div class="row">
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="firstName">First Name</label>
-									<input type="text" class="form-control" id="firstName" name="firstName" placeholder="<?php echo  $firstName ?>" value="<?php echo  $firstName ?>">
+									<input maxlength="45" type="text" class="form-control" id="firstName" name="firstName" placeholder="<?php echo  $firstName ?>" value="<?php echo  $firstName ?>">
 								</div>
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="surname">Surname</label>
-									<input type="text" class="form-control" id="surname" name="surname" placeholder="<?php echo  $surname ?>" value="<?php echo  $surname ?>">
+									<input maxlength="45" type="text" class="form-control" id="surname" name="surname" placeholder="<?php echo  $surname ?>" value="<?php echo  $surname ?>">
 								</div>
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="emailAdress">Email Address</label>
-									<input type="text" class="form-control" id="emailAdress" name="emailAdress" placeholder="<?php echo  $emailAdress ?>" value="<?php echo  $emailAdress ?>">
+									<input maxlength="45" type="text" class="form-control" id="emailAdress" name="emailAdress" placeholder="<?php echo  $emailAdress ?>" value="<?php echo  $emailAdress ?>">
 								</div>
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="phoneNumber">Phone Number</label>
-									<input type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="<?php echo  $phoneNumber ?>" value="<?php echo  $phoneNumber ?>">
+									<input maxlength="13" type="text" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="<?php echo  $phoneNumber ?>" value="<?php echo  $phoneNumber ?>">
 								</div>
 								<div class="dateSelect col-sm-6 col-xs-12">
 									<label for="dateOfBirthday" class="control-label">Date of Birthday*</label>
 									<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-										<input type="text" class="form-control" name="dateOfBirthday" placeholder="<?php echo  $dateFormated ?>" value="<?php echo  $dateFormated ?>">
+										<input maxlength="10" type="text" class="form-control" name="dateOfBirthday" placeholder="<?php echo  $dateFormated ?>" value="<?php echo  $dateFormated ?>">
 										<div class="input-group-addon"> 
 											<i class="fa fa-calendar" aria-hidden="true"></i>
 										</div>
@@ -402,15 +402,15 @@
 								<div class="form-group col-xs-12">
 									<br><br>
 									<label for="addressLine1" class="control-label">Address Line 1</label>
-									<input type="text" class="form-control" id="addressLine1" name="addressLine1" placeholder="<?php echo  $addressLine1 ?>" value="<?php echo  $addressLine1 ?>">
+									<input maxlength="60" type="text" class="form-control" id="addressLine1" name="addressLine1" placeholder="<?php echo  $addressLine1 ?>" value="<?php echo  $addressLine1 ?>">
 								</div>
 								<div class="form-group col-xs-12">
 									<label for="addressLine2" class="control-label">Address Line 2</label>
-									<input type="text" class="form-control" id="addressLine2" name="addressLine2" placeholder="<?php echo  $addressLine2 ?>" value="<?php echo  $addressLine2 ?>">
+									<input maxlength="60" type="text" class="form-control" id="addressLine2" name="addressLine2" placeholder="<?php echo  $addressLine2 ?>" value="<?php echo  $addressLine2 ?>">
 								</div>
 								<div class="form-group col-xs-6">
 									<label for="postalCode" class="control-label">Postal Code</label>
-									<input type="text" class="form-control" id="postalCode" name="postalCode" placeholder="<?php echo  $postalCode ?>" value="<?php echo  $postalCode ?>">
+									<input maxlength="15" type="text" class="form-control" id="postalCode" name="postalCode" placeholder="<?php echo  $postalCode ?>" value="<?php echo  $postalCode ?>">
 								</div>
 							</div>
 						</div>
@@ -547,7 +547,7 @@
 								</div>
 								<div id="studentNumber" class="form-group col-xs-6">
 									<label for="studentNumber" class="control-label">Student Number</label>
-									<input type="text" class="form-control" id="studentNumber" name="studentNumber" placeholder="<?php echo  $studentNumber ?>" value="<?php echo  $studentNumber ?>">
+									<input maxlength="45" type="text" class="form-control" id="studentNumber" name="studentNumber" placeholder="<?php echo  $studentNumber ?>" value="<?php echo  $studentNumber ?>">
 								</div>
 							</div>
 						</div>
@@ -562,15 +562,15 @@
 							<div class="row">
 								<div class="form-group col-xs-12">
 									<label for="currentPassword">Current Password</label>
-									<input type="password" class="form-control" id="currentPassword" name="currentPassword" value="<?php echo  $password_login ?>">
+									<input maxlength="15" type="password" class="form-control" id="currentPassword" name="currentPassword" value="<?php echo  $password_login ?>">
 								</div>
 								<div class="form-group col-xs-12">
 									<label for="newPassword">New Password</label>
-									<input type="password" class="form-control" id="newPassword" placeholder="New Password">
+									<input maxlength="15" type="password" class="form-control" id="newPassword" placeholder="New Password">
 								</div>
 								<div class="form-group col-xs-12">
 									<label for="confirmPassword">Confirm Password</label>
-									<input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+									<input maxlength="15" type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
 								</div>
 								<div class="form-group col-xs-12">
 									<button class="btn btn-primary" type="button">Change Password</button>

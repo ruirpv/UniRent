@@ -93,7 +93,7 @@
 							<div class="row">
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="itemName">Item title*</label>
-									<input type="text" class="form-control" id="itemName" name="itemName" placeholder="Item title">
+									<input maxlength="45" type="text" class="form-control" id="itemName" name="itemName" placeholder="Item title">
 								</div>
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="listingCategory">Category</label>
@@ -115,16 +115,16 @@
 								</div>
 								<div class="form-group col-xs-12">
 									<label for="itemDescription">Item description</label>
-									<textarea class="form-control" rows="3" id="itemDescription" name="itemDescription" placeholder="Item description"></textarea>
+									<textarea maxlength="300" class="form-control" rows="3" id="itemDescription" name="itemDescription" placeholder="Item description"></textarea>
 								</div>
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="itemPrice">Price*</label>
-									<input type="text" class="form-control" id="itemPrice" name="itemPrice" placeholder="€">
+									<input maxlength="6" type="text" class="form-control" id="itemPrice" name="itemPrice" placeholder="€">
 								</div>
                 <div class="dateSelect col-sm-6 col-xs-12">
                   <label for="yearBought" class="control-label">Year that was purchased</label>
                   <div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-                    <input type="text" class="form-control" id="yearBought" name="yearBought" placeholder="mm/dd/yyyy">
+                    <input maxlength="10" type="text" class="form-control" id="yearBought" name="yearBought" placeholder="mm/dd/yyyy">
                     <div class="input-group-addon">
                       <i class="fa fa-calendar" aria-hidden="true"></i>
                     </div>
@@ -161,60 +161,46 @@
 							<h3>Security policy</h3>
 							<p>We are not responsible for any damages caused by the use of this website. Please use our site at your own discretion and exercise good judgement as well as common sense when advertising business here.</p>
 							<div class="row">
-								<div class="form-group col-sm-6 col-xs-12">
+								<div class="form-group col-sm-6 col-xs-12 contactSelect">
 									<label for="scurityType">Type</label>
-									<input type="text" class="form-control" id="scurityType" name="scurityType" placeholder="Tipo">
+									<select name="securityType" id="securityType" class="select-drop">
+												<option value="0">Security Deposit</option>
+												<option value="1">Statement of Responsability</option>          
+											</select>
 								</div>
 								<div class="form-group col-sm-6 col-xs-12">
 									<label for="securityFee">Fee</label>
-									<input type="text" class="form-control" id="securityFee" name="securityFee" placeholder="€">
+									<input  maxlength="6" type="text" class="form-control" id="securityFee" name="securityFee" placeholder="€" value="€">
 								</div>
 								<div class="form-group col-xs-12">
 									<label for="securityDescription">Fee reason description</label>
-									<input type="text" class="form-control" id="securityDescription" name="securityDescription" placeholder="Descreva o motivo da taxa">
+									<input  maxlength="200" type="text" class="form-control" id="securityDescription" name="securityDescription" placeholder="Describe the reason for the fee">
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="dashboardBoxBg mb30">
 						<div class="profileIntro paraMargin">
-							<h3>Length of rental</h3>
-							<p>Example: 10.00am - 5.00pm or 10.00 - 17.00</p>
+							<h3>Good Availability</h3>
 							<div class="row">
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="mondayTime">Monday</label>
-									<input type="text" class="form-control" id="mondayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="tuesdayTime">Tuesday</label>
-									<input type="text" class="form-control" id="tuesdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="wednesdayTime">Wednesday</label>
-									<input type="text" class="form-control" id="wednesdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="thrusdayTime">Thrusday</label>
-									<input type="text" class="form-control" id="thrusdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="fridayTime">Friday</label>
-									<input type="text" class="form-control" id="fridayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="saturdayTime">Saturday</label>
-									<input type="text" class="form-control" id="saturdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="sundayTime">Sunday</label>
-									<input type="text" class="form-control" id="sundayTime" placeholder="Closed">
-								</div>
+								<div class="dateSelect col-sm-6 col-xs-12">
+                  				<label for="initialRentalDay" class="control-label">Beggining Date</label>
+                  					<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+                    				<input maxlength="10" type="text" class="form-control" id="initialAvailableDay" name="initialRentalDay" placeholder="mm/dd/yyyy">
+                    					<div class="input-group-addon">
+                      					<i class="fa fa-calendar" aria-hidden="true"></i>
+                    					</div>
+                  					</div>
+                			</div>
+                			<div class="dateSelect col-sm-6 col-xs-12">
+                  				<label for="endRentalDay" class="control-label">End Date</label>
+                  					<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+                    				<input maxlength="10" type="text" class="form-control" id="endAvailableDay" name="endRentalDay" placeholder="mm/dd/yyyy">
+                    					<div class="input-group-addon">
+                      					<i class="fa fa-calendar" aria-hidden="true"></i>
+                    					</div>
+                  					</div>
+                			</div>
 							</div>
 						</div>
 					</div>
