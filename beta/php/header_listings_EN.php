@@ -91,7 +91,7 @@
                 <li><a href="profile_EN.php"><i class="fa fa-cogs icon-dash" aria-hidden="true"></i> My account</a></li>
               </ul>
             </div>
-            <a class="btn btn-default navbar-btn" href="db/logout_EN.php"> + <span>Logout</span></a>
+            <a class="btn btn-default navbar-btn" href="db/logout_EN.php"><span>Logout</span></a>
           </div>
         </nav>
       </div>
