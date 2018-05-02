@@ -182,42 +182,25 @@
 					<div class="dashboardBoxBg mb30">
 						<div class="profileIntro paraMargin">
 							<h3>Length of rental</h3>
-							<p>Example: 10.00am - 5.00pm or 10.00 - 17.00</p>
 							<div class="row">
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="mondayTime">Monday</label>
-									<input type="text" class="form-control" id="mondayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="tuesdayTime">Tuesday</label>
-									<input type="text" class="form-control" id="tuesdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="wednesdayTime">Wednesday</label>
-									<input type="text" class="form-control" id="wednesdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="thrusdayTime">Thrusday</label>
-									<input type="text" class="form-control" id="thrusdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="fridayTime">Friday</label>
-									<input type="text" class="form-control" id="fridayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="saturdayTime">Saturday</label>
-									<input type="text" class="form-control" id="saturdayTime" placeholder="10.00am - 5.00pm">
-								</div>
-
-								<div class="form-group col-md-4 col-sm-6 col-xs-12">
-									<label for="sundayTime">Sunday</label>
-									<input type="text" class="form-control" id="sundayTime" placeholder="Closed">
-								</div>
+								<div class="dateSelect col-sm-6 col-xs-12">
+                  				<label for="initialRentalDay" class="control-label">Beggining Date</label>
+                  					<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+                    				<input maxlength="10" type="text" class="form-control" id="initialRentalDay" name="initialRentalDay" placeholder="mm/dd/yyyy">
+                    					<div class="input-group-addon">
+                      					<i class="fa fa-calendar" aria-hidden="true"></i>
+                    					</div>
+                  					</div>
+                			</div>
+                			<div class="dateSelect col-sm-6 col-xs-12">
+                  				<label for="endRentalDay" class="control-label">End Date</label>
+                  					<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
+                    				<input maxlength="10" type="text" class="form-control" id="endRentalDay" name="endRentalDay" placeholder="mm/dd/yyyy">
+                    					<div class="input-group-addon">
+                      					<i class="fa fa-calendar" aria-hidden="true"></i>
+                    					</div>
+                  					</div>
+                			</div>
 							</div>
 						</div>
 					</div>
