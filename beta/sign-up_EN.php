@@ -73,24 +73,24 @@
 								<div class="row">
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="firstName" class="control-label">First Name*</label>
-										<input type="text" class="form-control" id="firstName" name="firstName">
+										<input maxlength="45" type="text" class="form-control" id="firstName" name="firstName">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="surname" class="control-label">Surname*</label>
-										<input type="text" class="form-control" id="surname" name="surname">
+										<input maxlength="45" type="text" class="form-control" id="surname" name="surname">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="emailAdress" class="control-label">Email Address*</label>
-										<input type="email" class="form-control" id="emailAdress" name="emailAdress">
+										<input maxlength="45" type="email" class="form-control" id="emailAdress" name="emailAdress">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="phoneNumber" class="control-label">Phone Number*</label>
-										<input type="text" class="form-control" id="phoneNumber" name="phoneNumber">
+										<input maxlength="13" type="text" class="form-control" id="phoneNumber" name="phoneNumber">
 									</div>
 									<div class="dateSelect col-sm-6 col-xs-12">
 										<label for="dateOfBirthday" class="control-label">Date of Birthday*</label>
 										<div class="input-group date ed-datepicker filterDate" data-provide="datepicker">
-											<input type="text" class="form-control" name="dateOfBirthday" placeholder="mm/dd/yyyy">
+											<input maxlength="10" type="text" class="form-control" name="dateOfBirthday" placeholder="mm/dd/yyyy">
 											<div class="input-group-addon">
 												<i class="fa fa-calendar" aria-hidden="true"></i>
 											</div>
@@ -135,15 +135,15 @@
 								<div class="row">
 									<div class="form-group col-xs-12">
 										<label for="username" class="control-label">Username*</label>
-										<input type="text" class="form-control" id="username" name="username">
+										<input maxlength="15" type="text" class="form-control" id="username" name="username">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="password" class="control-label">Password*</label>
-										<input type="password" class="form-control" id="password" name="password">
+										<input maxlength="15" type="password" class="form-control" id="password" name="password">
 									</div>
 									<div class="form-group col-sm-6 col-xs-12">
 										<label for="passwordAgain" class="control-label">Password (re-type)*</label>
-										<input type="password" class="form-control" id="passwordAgain" name="passwordAgain">
+										<input maxlength="15" type="password" class="form-control" id="passwordAgain" name="passwordAgain">
 									</div>
 								</div>
 							</div>
@@ -195,15 +195,15 @@
 									<div class="form-group col-xs-12">
 										<br><br>
 										<label for="addressLine1" class="control-label">Address Line 1*</label>
-										<input type="text" class="form-control" id="addressLine1" name="addressLine1">
+										<input maxlength="60" type="text" class="form-control" id="addressLine1" name="addressLine1">
 									</div>
 									<div class="form-group col-xs-12">
 										<label for="addressLine2" class="control-label">Address Line 2</label>
-										<input type="text" class="form-control" id="addressLine2" name="addressLine2">
+										<input maxlength="60" type="text" class="form-control" id="addressLine2" name="addressLine2">
 									</div>
 									<div class="form-group col-xs-6">
 										<label for="postalCode" class="control-label">Postal Code*</label>
-										<input type="text" class="form-control" id="postalCode" name="postalCode">
+										<input maxlength="15" type="text" class="form-control" id="postalCode" name="postalCode">
 									</div>
 								</div>
 							</div>
@@ -315,7 +315,7 @@
 									</div>
 									<div id="studentNumber" class="form-group col-xs-6">
 										<label for="studentNumber" class="control-label">Student Number</label>
-										<input type="text" class="form-control" id="studentNumber" name="studentNumber">
+										<input maxlength="45" type="text" class="form-control" id="studentNumber" name="studentNumber">
 									</div>
 								</div>
 							</div>
