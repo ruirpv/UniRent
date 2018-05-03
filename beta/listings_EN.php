@@ -58,7 +58,7 @@
 					</div>
 					<div class="profileUserInfo bt profileName">
 						<p><?php echo $emailAdress; ?></p>
-						<h4>Seu aniversário: <?php echo $dateFormated; ?></h4>
+						<h4>Your birthday: <?php echo $dateFormated; ?></h4>
 						<h5><?php echo $emailAdress . " | " . $phoneNumber; ?></h5>
 						<a href="profile_EN.php" class="btn btn-primary">Update</a>
 					</div>
